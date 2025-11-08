@@ -1,369 +1,928 @@
 <!-- Banner -->
-<section class="section banner relative">
+<section class="section banner relative bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
   <div class="container">
-    <div class="row items-center">
+    <div class="row items-center py-20">
       <div class="lg:col-6">
-        <h1 class="banner-title">
-          Scale design & dev operations with Avocode Enterprise
+        <span class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold mb-4">🎓 Phát triển tư duy cho trẻ</span>
+        <h1 class="text-5xl font-bold text-gray-900 leading-tight mb-6">
+          Khám phá tiềm năng <span class="text-indigo-600">triết học</span> trong mỗi em nhỏ
         </h1>
-        <p class="mt-6">
-          A fully integrated suite of authentication & authoriz products,
-          Stytch’s platform removes the headache of.
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+          Nơi phát triển tư duy triết học và kỹ năng sống cho trẻ em.
+          Chúng tôi đồng hành cùng con trên hành trình khám phá tri thức.
         </p>
-        <a class="btn btn-white mt-8" href="#">Download The Theme</a>
+        <div class="mt-8 flex gap-4">
+          <a class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 transition-all shadow-lg hover:shadow-xl" href="khoa-hoc.html">
+            Khám phá khóa học
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+          <a class="inline-flex items-center px-6 py-3 bg-white text-indigo-600 font-semibold rounded-xl hover:bg-gray-50 transition-all border-2 border-indigo-200" href="signup.html">
+            Đăng ký ngay
+          </a>
+        </div>
       </div>
       <div class="lg:col-6">
-        <img
-          class="w-full object-contain"
-          src="images/banner-img.png"
-          width="603"
-          height="396"
-          alt=""
-        />
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-indigo-200 to-purple-200 rounded-3xl transform rotate-6"></div>
+          <img
+            class="relative w-full object-contain rounded-3xl shadow-2xl"
+            src="images/banner-img.png"
+            width="603"
+            height="396"
+            alt="Học sinh vui vẻ học tập"
+          />
+        </div>
       </div>
     </div>
   </div>
-  <img
-    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
-    src="images/banner-shape.svg"
-    alt=""
-  />
 </section>
 <!-- ./end Banner -->
 
-<!-- Key features -->
-<section class="section key-feature relative">
-  <img
-    class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
-    src="images/icons/feature-shape.svg"
-    alt=""
-  />
+<!-- Khóa học Section -->
+<section class="section ">
   <div class="container">
-    <div class="row justify-between text-center lg:text-start">
-      <div class="lg:col-5">
-        <h2>The Highlighting Part Of Our Solution</h2>
+    <div class="row justify-center text-center mb-8">
+      <div class="lg:col-8">
+        <h2 class="text-3xl font-bold mb-4">Khóa học</h2>
       </div>
-      <div class="mt-6 lg:col-5 lg:mt-0">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
-          Werat viverra id et aliquet. vulputate egestas sollicitudin .
+    </div>
+
+    <!-- Grid 2 khóa học -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+
+      <!-- Triết gia Tập sự -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-emerald-200 hover:border-emerald-300 transition-all">
+        <div class="p-6">
+          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-xl mb-6 border border-emerald-100">
+            <div class="text-center">
+              <div class="text-4xl mb-3">🌱</div>
+              <h3 class="text-2xl font-bold text-emerald-700 mb-2">Triết gia Tập sự</h3>
+              <p class="text-emerald-600 text-sm">Độ tuổi: 6-9 tuổi | 48 bài học</p>
+              <p class="text-emerald-700 font-bold text-2xl mt-3">2.500.000 VNĐ</p>
+            </div>
+          </div>
+
+          <!-- Grid 6 Thang năng lực -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+
+            <div onclick="openModal('ts-hieubiet')" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 hover:from-blue-100 hover:to-indigo-100 hover:scale-105 transition-all cursor-pointer border border-blue-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">📚</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Hiểu biết</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('ts-yeuthuong')" class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 hover:from-pink-100 hover:to-rose-100 hover:scale-105 transition-all cursor-pointer border border-pink-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">❤️</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Yêu thương</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('ts-suynghi')" class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 hover:from-purple-100 hover:to-violet-100 hover:scale-105 transition-all cursor-pointer border border-purple-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🧠</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Suy nghĩ</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('ts-xahoi')" class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-4 hover:from-amber-100 hover:to-orange-100 hover:scale-105 transition-all cursor-pointer border border-amber-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🤝</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Xã hội</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('ts-sangtao')" class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 hover:from-teal-100 hover:to-cyan-100 hover:scale-105 transition-all cursor-pointer border border-teal-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🎨</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Sáng tạo</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('ts-kynang')" class="bg-gradient-to-br from-lime-50 to-emerald-50 rounded-xl p-4 hover:from-lime-100 hover:to-emerald-100 hover:scale-105 transition-all cursor-pointer border border-lime-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🌟</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Kỹ năng sống</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center space-y-3">
+            <a href="khoa-hoc-tap-su.html" class="block bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold py-3 px-6 rounded-xl hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg">
+              Xem chi tiết khóa học →
+            </a>
+            <a href="signup.html" class="block bg-white text-emerald-600 font-bold py-3 px-6 rounded-xl hover:bg-emerald-50 transition-all border-2 border-emerald-200">
+              Đăng ký ngay
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Triết gia Khám Phá -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-indigo-200 hover:border-indigo-300 transition-all">
+        <div class="p-6">
+          <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl mb-6 border border-indigo-100">
+            <div class="text-center">
+              <div class="text-4xl mb-3">🚀</div>
+              <h3 class="text-2xl font-bold text-indigo-700 mb-2">Triết gia Khám Phá</h3>
+              <p class="text-indigo-600 text-sm">Độ tuổi: 10-15 tuổi | 64 bài học</p>
+              <p class="text-indigo-700 font-bold text-2xl mt-3">3.500.000 VNĐ</p>
+            </div>
+          </div>
+
+          <!-- Grid 6 Thang năng lực -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+
+            <div onclick="openModal('kp-hieubiet')" class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 hover:from-blue-100 hover:to-indigo-100 hover:scale-105 transition-all cursor-pointer border border-blue-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">📚</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Hiểu biết</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('kp-yeuthuong')" class="bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl p-4 hover:from-pink-100 hover:to-rose-100 hover:scale-105 transition-all cursor-pointer border border-pink-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">❤️</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Yêu thương</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('kp-suynghi')" class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-4 hover:from-purple-100 hover:to-violet-100 hover:scale-105 transition-all cursor-pointer border border-purple-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🧠</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Suy nghĩ</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('kp-xahoi')" class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-4 hover:from-amber-100 hover:to-orange-100 hover:scale-105 transition-all cursor-pointer border border-amber-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🤝</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Xã hội</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('kp-sangtao')" class="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-4 hover:from-teal-100 hover:to-cyan-100 hover:scale-105 transition-all cursor-pointer border border-teal-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🎨</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Sáng tạo</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+            <div onclick="openModal('kp-kynang')" class="bg-gradient-to-br from-lime-50 to-emerald-50 rounded-xl p-4 hover:from-lime-100 hover:to-emerald-100 hover:scale-105 transition-all cursor-pointer border border-lime-200">
+              <div class="text-center">
+                <div class="text-3xl mb-2">🌟</div>
+                <h4 class="font-bold text-gray-800 text-sm mb-1">Kỹ năng sống</h4>
+                <p class="text-xs text-gray-600">2 chủ đề</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text-center space-y-3">
+            <a href="khoa-hoc-kham-pha.html" class="block bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold py-3 px-6 rounded-xl hover:from-indigo-600 hover:to-purple-600 transition-all shadow-lg">
+              Xem chi tiết khóa học →
+            </a>
+            <a href="signup.html" class="block bg-white text-indigo-600 font-bold py-3 px-6 rounded-xl hover:bg-indigo-50 transition-all border-2 border-indigo-200">
+              Đăng ký ngay
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ./end Khóa học Section -->
+
+
+<!-- ./end Khóa học Section -->
+
+<!-- Nhận tư vấn và khởi hành Section -->
+<section class="section py-20 bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50">
+  <div class="container">
+    <div class="text-center mb-12">
+      <span class="inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold mb-4">💬 Tư vấn miễn phí</span>
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Nhận tư vấn và khởi hành</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Đăng ký ngay để nhận tư vấn miễn phí và bắt đầu hành trình học tập</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+
+        <!-- Form bên trái -->
+        <div class="p-8 lg:p-10">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">Thông tin đăng ký</h3>
+          <form id="consultationForm" class="space-y-5">
+
+            <!-- Họ tên con -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Họ tên con <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                name="childName"
+                required
+                placeholder="Nhập họ tên con"
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+              />
+            </div>
+
+            <!-- Năm sinh -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                Năm sinh <span class="text-red-500">*</span>
+              </label>
+              <select
+                name="birthYear"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+              >
+                <option value="">Chọn năm sinh</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+              </select>
+            </div>
+
+            <!-- SĐT bố mẹ -->
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2">
+                SĐT bố mẹ <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="tel"
+                name="parentPhone"
+                required
+                placeholder="Nhập số điện thoại"
+                pattern="0[0-9]{9}"
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+              />
+              <p class="text-xs text-gray-500 mt-1">Định dạng: 10 số, bắt đầu bằng 0</p>
+            </div>
+
+            <!-- Nút submit -->
+            <button
+              type="submit"
+              class="w-full bg-indigo-600 text-white font-bold py-4 px-6 rounded-xl hover:bg-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Gửi yêu cầu tư vấn →
+            </button>
+          </form>
+        </div>
+
+        <!-- Thông tin bên phải -->
+        <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 lg:p-10 text-white">
+          <h3 class="text-2xl font-bold mb-6">Lợi ích khi đăng ký</h3>
+
+          <div class="space-y-5">
+            <div class="flex items-start">
+              <div class="bg-white/20 backdrop-blur rounded-full p-3 mr-4 mt-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-white mb-1">Tư vấn miễn phí</h4>
+                <p class="text-sm text-indigo-100">Chuyên gia sẽ tư vấn chương trình phù hợp với con bạn</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-white/20 backdrop-blur rounded-full p-3 mr-4 mt-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-white mb-1">Học thử miễn phí</h4>
+                <p class="text-sm text-indigo-100">Trải nghiệm 2 buổi học đầu tiên hoàn toàn miễn phí</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-white/20 backdrop-blur rounded-full p-3 mr-4 mt-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-white mb-1">Ưu đãi đặc biệt</h4>
+                <p class="text-sm text-indigo-100">Giảm 20% học phí khi đăng ký sớm</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-white/20 backdrop-blur rounded-full p-3 mr-4 mt-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-white mb-1">Hỗ trợ 24/7</h4>
+                <p class="text-sm text-indigo-100">Đội ngũ tư vấn sẵn sàng hỗ trợ mọi lúc</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-white/20 backdrop-blur rounded-full p-3 mr-4 mt-1">
+                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-white mb-1">Cam kết chất lượng</h4>
+                <p class="text-sm text-indigo-100">Hoàn tiền 100% nếu không hài lòng</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotline -->
+          <div class="mt-8 p-5 bg-white rounded-2xl">
+            <p class="text-sm text-gray-600 mb-2">Hoặc gọi ngay Hotline</p>
+            <a href="tel:1900123456" class="text-3xl font-bold text-indigo-600 hover:text-indigo-700 transition-colors">
+              1900 123 456
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Nhận tư vấn và khởi hành Section -->
+
+<!-- Vòm sáng Section -->
+<section class="section bg-gradient-to-br py-16">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Vòm sáng</h2>
+      <p class="text-gray-700 text-lg">Không gian sáng tạo và khám phá tri thức</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-xl p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Vòm sáng 1 -->
+          <div class="border-2 border-lime-500 rounded-lg p-6 hover:shadow-lg transition-all">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-lime-500 rounded-full mx-auto flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-800">Vòm sáng</h3>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p class="text-gray-700">📖 <strong>Nội dung:</strong> Các topic nhỏ</p>
+              <p class="text-gray-700">🎥 <strong>Video:</strong> Nhúng link Youtube</p>
+              <p class="text-gray-700">❓ <strong>Bài tập:</strong> Câu hỏi trắc nghiệm</p>
+            </div>
+            <button class="mt-4 w-full bg-lime-500 text-white font-semibold py-2 rounded-lg hover:bg-lime-600 transition-colors">
+              Khám phá →
+            </button>
+          </div>
+
+          <!-- Tạp chí Rắc rối -->
+          <div class="border-2 border-lime-500 rounded-lg p-6 hover:shadow-lg transition-all">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-lime-500 rounded-full mx-auto flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-800">Tạp chí Rắc rối</h3>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p class="text-gray-700">📖 <strong>Nội dung:</strong> Review sách</p>
+              <p class="text-gray-700">📚 <strong>Thể loại:</strong> Đa dạng</p>
+              <p class="text-gray-700">⭐ <strong>Đánh giá:</strong> Chuyên sâu</p>
+            </div>
+            <button class="mt-4 w-full bg-lime-500 text-white font-semibold py-2 rounded-lg hover:bg-lime-600 transition-colors">
+              Xem tạp chí →
+            </button>
+          </div>
+
+          <!-- Tiệm câu hỏi Trên Cây -->
+          <div class="border-2 border-lime-500 rounded-lg p-6 hover:shadow-lg transition-all">
+            <div class="text-center mb-4">
+              <div class="w-16 h-16 bg-lime-500 rounded-full mx-auto flex items-center justify-center mb-3">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="font-bold text-xl text-gray-800">Tiệm câu hỏi Trên Cây</h3>
+            </div>
+            <div class="space-y-2 text-sm">
+              <p class="text-gray-700">💬 <strong>Nội dung:</strong> Topic hỏi đáp</p>
+              <p class="text-gray-700">👥 <strong>Cộng đồng:</strong> Tương tác</p>
+              <p class="text-gray-700">✅ <strong>Giải đáp:</strong> Nhanh chóng</p>
+            </div>
+            <button class="mt-4 w-full bg-lime-500 text-white font-semibold py-2 rounded-lg hover:bg-lime-600 transition-colors">
+              Đặt câu hỏi →
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Vòm sáng Section -->
+
+<!-- Thư viện lơ lững Section -->
+<section class="section  py-16">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Thư viện lơ lững</h2>
+      <p class="text-gray-700 text-lg">Kho tàng tri thức và tài liệu học tập</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Review sách -->
+        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center mr-3">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-xl text-gray-800">Review sách</h3>
+          </div>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>✓ Đánh giá sách hay cho trẻ</li>
+            <li>✓ Phân tích nội dung sâu sắc</li>
+            <li>✓ Gợi ý sách theo độ tuổi</li>
+            <li>✓ Review từ chuyên gia</li>
+          </ul>
+          <a href="thu-vien.html#review-sach" class="mt-4 inline-block text-pink-600 font-semibold hover:text-pink-700">
+            Xem review →
+          </a>
+        </div>
+
+        <!-- Review sách (duplicate for display) -->
+        <div class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center mr-3">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-xl text-gray-800">Tài liệu học tập</h3>
+          </div>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>✓ E-book chất lượng cao</li>
+            <li>✓ PDF tài liệu tham khảo</li>
+            <li>✓ Video bài giảng</li>
+            <li>✓ Bài tập thực hành</li>
+          </ul>
+          <a href="thu-vien.html" class="mt-4 inline-block text-pink-600 font-semibold hover:text-pink-700">
+            Vào thư viện →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Thư viện lơ lững Section -->
+
+<!-- Tiệm câu hỏi Trên Cây Section -->
+<section class="section   py-16">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-white mb-4">Tiệm câu hỏi Trên Cây</h2>
+      <p class="text-white text-lg">Không gian hỏi đáp và trao đổi kiến thức</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+      <div class="text-center mb-6">
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">Topic hỏi đáp</h3>
+        <p class="text-gray-600">Đặt câu hỏi và nhận câu trả lời từ cộng đồng</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="border-2 border-sky-500 rounded-lg p-5 hover:shadow-lg transition-all">
+          <div class="flex items-start">
+            <span class="text-3xl mr-3">💡</span>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800 mb-2">Hỏi về bài học</h4>
+              <p class="text-sm text-gray-600">Giải đáp thắc mắc về nội dung học tập</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-2 border-sky-500 rounded-lg p-5 hover:shadow-lg transition-all">
+          <div class="flex items-start">
+            <span class="text-3xl mr-3">🤔</span>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800 mb-2">Thảo luận chung</h4>
+              <p class="text-sm text-gray-600">Chia sẻ kiến thức và kinh nghiệm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="goc-giai-dap.html" class="inline-block bg-sky-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-sky-600 transition-colors shadow-lg">
+          Vào Tiệm câu hỏi →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Tiệm câu hỏi Trên Cây Section -->
+
+<!-- Tram trắc trở Section -->
+<section class="section bg-gradient-to-br  py-16">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-black mb-4">Tram trắc trở</h2>
+      <p class=" text-black text-lg">Trạm dừng chân cho những vấn đề khó</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto rounded-2xl shadow-xl p-8">
+      <div class="space-y-4">
+        <div class="flex items-start bg-blue-50 rounded-lg p-4">
+          <div class="bg-blue-500 rounded-full p-2 mr-4 mt-1">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 mb-1">Tư vấn tâm lý</h4>
+            <p class="text-sm text-gray-600">Hỗ trợ tâm lý cho học sinh và phụ huynh</p>
+          </div>
+        </div>
+
+        <div class="flex items-start bg-blue-50 rounded-lg p-4">
+          <div class="bg-blue-500 rounded-full p-2 mr-4 mt-1">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-gray-800 mb-1">Giải đáp khó khăn</h4>
+            <p class="text-sm text-gray-600">Hỗ trợ giải quyết các vấn đề học tập phức tạp</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-6">
+        <a href="phong-yeu-cau.html" class="inline-block bg-blue-500 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors shadow-lg">
+          Tìm hiểu thêm →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Tram trắc trở Section -->
+
+<!-- Tạp chí Rắc rối Section (duplicate) -->
+<section class="section bg-gradient-to-br  py-16">
+  <div class="container">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-black mb-4">Tạp chí Rắc rối</h2>
+      <p class="text-black text-lg">Những bài viết sâu sắc và thú vị</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+          <div class="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Review sách</h3>
+          <p class="text-sm text-gray-600">Đánh giá và giới thiệu sách hay</p>
+        </div>
+
+        <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+          <div class="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Bài viết chuyên sâu</h3>
+          <p class="text-sm text-gray-600">Các chủ đề giáo dục ý nghĩa</p>
+        </div>
+
+        <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+          <div class="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-lg text-gray-800 mb-2">Góc chia sẻ</h3>
+          <p class="text-sm text-gray-600">Trải nghiệm từ cộng đồng</p>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="thu-vien.html#tap-chi" class="inline-block bg-blue-600 text-white font-bold px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors shadow-lg">
+          Đọc tạp chí →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./end Tạp chí Rắc rối Section -->
+
+<!-- Khối chức năng chính -->
+<section class="section key-feature relative">
+  <div class="container">
+    <div class="row justify-center text-center mb-12">
+      <div class="lg:col-8">
+        <h2 class="text-4xl font-bold">Các Chương Trình Của Chúng Tôi</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Khám phá các khóa học và dịch vụ được thiết kế đặc biệt
+          để phát triển toàn diện cho học sinh
         </p>
       </div>
     </div>
-    <div
-      class="key-feature-grid mt-10 grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4"
-    >
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Live Caption</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-1.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Smart Reply</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-2.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Sound Amplifier</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-3.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Gesture Navigation</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-4.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Dark Theme</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-5.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Privacy Controls</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-6.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Location Controls</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-7.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Security Updates</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-8.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Focus Mode</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-9.svg"
-            alt=""
-          />
-        </span>
-      </div>
-      <div
-        class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
-      >
-        <div>
-          <h3 class="h4 text-xl lg:text-2xl">Family Link</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <span class="icon mt-4">
-          <img
-            class="objec-contain"
-            src="images/icons/feature-icon-10.svg"
-            alt=""
-          />
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Key features -->
 
-<!-- Services -->
-<section class="section services">
+    <!-- Grid các khối chức năng -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Khối Khóa học - Màu xanh lá -->
+      <div class="rounded-lg bg-gradient-to-br from-green-400 to-green-600 p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Khóa Học</h3>
+            <p class="text-white/90">Triết gia Tập sự & Khám phá</p>
+          </div>
+          <div class="bg-white/20 p-3 rounded-full">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Các thang kiến thức đa dạng
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Video bài giảng sinh động
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Bài tập trắc nghiệm tương tác
+          </div>
+        </div>
+        <a href="khoa-hoc.html" class="inline-block bg-white text-green-600 font-semibold px-6 py-3 rounded-lg hover:bg-green-50 transition-colors">
+          Xem chi tiết →
+        </a>
+      </div>
+
+      <!-- Khối Tư vấn - Màu hồng -->
+      <div class="rounded-lg bg-gradient-to-br from-pink-400 to-pink-600 p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Tư Vấn</h3>
+            <p class="text-white/90">Tư vấn học tập & phụ huynh</p>
+          </div>
+          <div class="bg-white/20 p-3 rounded-full">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Tư vấn chương trình học
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Hỗ trợ phụ huynh 24/7
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Tư vấn miễn phí
+          </div>
+        </div>
+        <a href="tu-van.html" class="inline-block bg-white text-pink-600 font-semibold px-6 py-3 rounded-lg hover:bg-pink-50 transition-colors">
+          Đăng ký tư vấn →
+        </a>
+      </div>
+
+      <!-- Khối Thư viện - Màu xanh dương -->
+      <div class="rounded-lg bg-gradient-to-br from-blue-400 to-blue-600 p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Thư Viện</h3>
+            <p class="text-white/90">Tài liệu & Video học tập</p>
+          </div>
+          <div class="bg-white/20 p-3 rounded-full">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+            </svg>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Kho tài liệu phong phú
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Video học tập chất lượng
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Cập nhật liên tục
+          </div>
+        </div>
+        <a href="thu-vien.html" class="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+          Khám phá ngay →
+        </a>
+      </div>
+
+      <!-- Khối CLB - Màu tím -->
+      <div class="rounded-lg bg-gradient-to-br from-purple-400 to-purple-600 p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Câu Lạc Bộ</h3>
+            <p class="text-white/90">Hoạt động ngoại khóa</p>
+          </div>
+          <div class="bg-white/20 p-3 rounded-full">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            CLB Toán học sáng tạo
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            CLB Khoa học thực nghiệm
+          </div>
+          <div class="flex items-center text-white">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            CLB Văn thơ sáng tác
+          </div>
+        </div>
+        <a href="cau-lac-bo.html" class="inline-block bg-white text-purple-600 font-semibold px-6 py-3 rounded-lg hover:bg-purple-50 transition-colors">
+          Tham gia CLB →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ./end Khối chức năng -->
+
+<!-- Giới thiệu về chúng tôi -->
+<section class="section services bg-gray-50">
   <div class="container">
-    <div class="tab row gx-5 items-center" data-tab-group="integration-tab">
-      <div class="lg:col-7 lg:order-2">
-        <div class="tab-content" data-tab-content>
-          <div class="tab-content-panel active" data-tab-panel="0">
-            <img
-              class="w-full object-contain"
-              src="images/sells-by-country.png"
-            />
-          </div>
-          <div class="tab-content-panel" data-tab-panel="1">
-            <img class="w-full object-contain" src="images/collaboration.png" />
-          </div>
-          <div class="tab-content-panel" data-tab-panel="2">
-            <img
-              class="w-full object-contain"
-              src="images/sells-by-country.png"
-            />
-          </div>
-        </div>
+    <div class="row items-center mb-16">
+      <div class="lg:col-6">
+        <img class="w-full object-contain rounded-2xl shadow-lg" src="images/collaboration.png" alt="Học sinh học tập" />
       </div>
-      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">
-            Prevent failure from to impacting your reputation
+      <div class="mt-6 lg:col-6 lg:mt-0">
+        <div class="text-container lg:pl-12">
+          <h2 class="text-3xl lg:text-4xl font-bold">
+            Phương Pháp Giáo Dục Hiện Đại
           </h2>
-          <p class="mt-4">
-            Our platform helps you build secure onboarding authentication
-            experiences that retain and engage your users. We build the
-            infrastructure, you can.
+          <p class="mt-4 text-lg text-gray-700">
+            Chúng tôi áp dụng phương pháp giáo dục triết học cho trẻ em,
+            giúp các em phát triển tư duy phản biện, sáng tạo và kỹ năng sống.
           </p>
-          <ul class="tab-nav -ml-4 mt-8 border-b-0" data-tab-nav>
-            <li class="tab-nav-item active" data-tab="0">
-              <img class="mr-3" src="images/icons/drop.svg" alt="" />
-              Habit building essential choose habit
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Phát triển tư duy triết học từ nhỏ
             </li>
-            <li class="tab-nav-item" data-tab="1">
-              <img class="mr-3" src="images/icons/brain.svg" alt="" />
-              Get an overview of Habit Calendars.
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Học qua trải nghiệm và thực hành
             </li>
-            <li class="tab-nav-item" data-tab="2">
-              <img class="mr-3" src="images/icons/timer.svg" alt="" />
-              Start building with Habitify platform
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Giáo viên giàu kinh nghiệm, tận tâm
             </li>
           </ul>
+          <button class="btn btn-primary mt-8" onclick="window.location.href='about.html'">
+            Tìm hiểu thêm
+          </button>
         </div>
       </div>
     </div>
-    <div class="row gx-5 mt-12 items-center lg:mt-0">
-      <div class="lg:col-7">
-        <div class="relative">
-          <img class="w-full object-contain" src="images/collaboration.png" />
-          <img
-            class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
-            src="images/shape.svg"
-            alt=""
-          />
-        </div>
+
+    <div class="row items-center">
+      <div class="lg:col-6 lg:order-2">
+        <img class="w-full object-contain rounded-2xl shadow-lg" src="images/sells-by-country.png" alt="Thống kê học viên" />
       </div>
-      <div class="mt-6 lg:col-5 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">
-            Accept payments any country in this whole universe
+      <div class="mt-6 lg:col-6 lg:order-1 lg:mt-0">
+        <div class="text-container lg:pr-12">
+          <h2 class="text-3xl lg:text-4xl font-bold">
+            Theo Dõi Tiến Trình Học Tập
           </h2>
-          <p class="mt-4">
-            Donec sollicitudin molestie malesda. Donec sollitudin molestie
-            malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies
-            ligula sed
+          <p class="mt-4 text-lg text-gray-700">
+            Hệ thống quản lý học tập hiện đại giúp phụ huynh và học sinh
+            dễ dàng theo dõi tiến độ, kết quả học tập mọi lúc, mọi nơi.
           </p>
-          <ul class="mt-6 text-dark lg:-ml-4">
-            <li class="mb-2 flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
-                alt=""
-              />
-              Supporting more than 119 country world
+          <ul class="mt-6 space-y-3">
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Báo cáo tiến trình chi tiết
             </li>
-            <li class="mb-2 flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
-                alt=""
-              />
-              Open transaction with more than currencies
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Chấm điểm tự động bài tập trắc nghiệm
             </li>
-            <li class="flex items-center rounded px-4">
-              <img
-                class="mr-3"
-                src="images/icons/checkmark-circle.svg"
-                alt=""
-              />
-              Customer Service with 79 languages
+            <li class="flex items-center text-gray-800">
+              <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              Giao tiếp trực tiếp với giáo viên
             </li>
           </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row gx-5 mt-12 items-center lg:mt-0">
-      <div class="lg:col-7 lg:order-2">
-        <div class="video pb-5 pr-9">
-          <div class="video-thumbnail overflow-hidden rounded-2xl">
-            <img
-              class="w-full object-contain"
-              src="images/intro-thumbnail.png"
-              alt=""
-            />
-            <button class="video-play-btn">
-              <img src="images/icons/play-icon.svg" alt="" />
-            </button>
-          </div>
-          <div
-            class="video-player absolute left-0 top-0 z-10 hidden h-full w-full"
-          >
-            <iframe
-              class="h-full w-full"
-              allowfullscreen=""
-              src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"
-            ></iframe>
-          </div>
-          <img
-            class="intro-shape absolute bottom-0 right-0 -z-[1]"
-            src="images/shape.svg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="mt-6 lg:col-5 lg:order-1 lg:mt-0">
-        <div class="text-container">
-          <h2 class="lg:text-4xl">Accountability that works for you</h2>
-          <p class="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
-            .
-          </p>
-          <button class="btn btn-white mt-6">know about us</button>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- ./end Services -->
+<!-- ./end Giới thiệu -->
 
 <!-- Reviews -->
-<section class="reviews">
+<section class="reviews bg-white py-16">
   <div class="container">
-    <div class="row justify-between">
-      <div class="lg:col-6">
-        <h2>Our customers have nice things to say about us</h2>
-      </div>
-      <div class="lg:col-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas
-          Werat viverra id et aliquet. vulputate egestas sollicitudin .
+    <div class="row justify-center text-center mb-12">
+      <div class="lg:col-8">
+        <h2 class="text-4xl font-bold">Phụ Huynh Nói Gì Về Chúng Tôi</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Những phản hồi chân thật từ phụ huynh và học sinh đã tham gia khóa học
         </p>
       </div>
     </div>
@@ -376,11 +935,11 @@
                 <div class="review-author-avatar bg-gradient">
                   <img src="images/users/user-5.png" alt="" />
                 </div>
-                <h4 class="mb-2">Courtney Henry</h4>
-                <p class="mb-4 text-[#666]">microsoft corp</p>
+                <h4 class="mb-2">Chị Nguyễn Thu Hà</h4>
+                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 3</p>
                 <p>
-                  Our platform helps build secure onboarding authentica
-                  experiences & engage your users. We build .
+                  "Con tôi đã thay đổi rất nhiều sau khi tham gia khóa Triết gia Tập sự.
+                  Con tự tin hơn, biết suy nghĩ và đặt câu hỏi về mọi thứ xung quanh."
                 </p>
                 <div
                   class="review-rating mt-6 flex items-center justify-center space-x-2.5"
@@ -389,7 +948,7 @@
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star-white.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -398,11 +957,11 @@
                 <div class="review-author-avatar bg-gradient">
                   <img src="images/users/user-2.png" alt="" />
                 </div>
-                <h4 class="mb-2">Ronald Richards</h4>
-                <p class="mb-4 text-[#666]">meta limited</p>
+                <h4 class="mb-2">Anh Trần Văn Minh</h4>
+                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 5</p>
                 <p>
-                  Our platform helps build secure onboarding authentica
-                  experiences & engage your users. We build .
+                  "Phương pháp giảng dạy rất phù hợp với trẻ em. Video bài giảng sinh động,
+                  bài tập thú vị. Con tôi rất thích học và luôn mong chờ buổi học mới."
                 </p>
                 <div
                   class="review-rating mt-6 flex items-center justify-center space-x-2.5"
@@ -411,7 +970,7 @@
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star-white.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -420,11 +979,11 @@
                 <div class="review-author-avatar bg-gradient">
                   <img src="images/users/user-6.png" alt="" />
                 </div>
-                <h4 class="mb-2">Bessie Cooper</h4>
-                <p class="mb-4 text-[#666]">apple inc ltd</p>
+                <h4 class="mb-2">Chị Phạm Thị Lan</h4>
+                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 4</p>
                 <p>
-                  Our platform helps build secure onboarding authentica
-                  experiences & engage your users. We build .
+                  "Giáo viên nhiệt tình, tận tâm. Hệ thống theo dõi tiến trình học tập
+                  giúp tôi nắm rõ được sự tiến bộ của con. Rất hài lòng với chương trình!"
                 </p>
                 <div
                   class="review-rating mt-6 flex items-center justify-center space-x-2.5"
@@ -433,7 +992,7 @@
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
                   <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star-white.svg" alt="" />
+                  <img src="images/icons/star.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -450,26 +1009,131 @@
 <!-- Reviews -->
 
 <!-- Call To action -->
-<section class="px-5 py-20 xl:py-[120px]">
+<section class="px-5 py-20 xl:py-[120px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
   <div class="container">
-    <div
-      class="bg-gradient row justify-center rounded-b-[80px] rounded-t-[20px] px-[30px] pb-[75px] pt-16"
-    >
-      <div class="lg:col-11">
-        <div class="row">
-          <div class="lg:col-7">
-            <h2 class="h1 text-white">Helping teams in the world with focus</h2>
-            <a class="btn btn-white mt-8" href="#">Download The Theme</a>
+    <div class="row justify-center text-center text-white">
+      <div class="lg:col-10">
+        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+          Sẵn Sàng Bắt Đầu Hành Trình Học Tập?
+        </h2>
+        <p class="text-xl mb-8 text-white/90">
+          Đăng ký ngay hôm nay để nhận ưu đãi đặc biệt dành cho học viên mới.
+          Cùng con khám phá thế giới tri thức đầy màu sắc!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a class="btn btn-white text-lg px-8 py-4" href="signup.html">
+            Đăng ký học ngay
+          </a>
+          <a class="btn btn-outline-white text-lg px-8 py-4 bg-white/10 hover:bg-white/20 border-2 border-white text-white" href="tu-van.html">
+            Đăng ký tư vấn miễn phí
+          </a>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">500+</div>
+            <div class="text-white/80">Học viên đã tham gia</div>
           </div>
-          <div class="mt-8 lg:col-5 lg:mt-0">
-            <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              egestas Werat viverra id et aliquet. vulputate egestas
-              sollicitudin .
-            </p>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">98%</div>
+            <div class="text-white/80">Phụ huynh hài lòng</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">15+</div>
+            <div class="text-white/80">Năm kinh nghiệm</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal Popup cho Video và Bài tập -->
+<div id="competencyModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+  <div class="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+
+    <!-- Nút đóng -->
+    <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 transition-all">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Header Modal -->
+    <div id="modalHeader" class="bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-t-2xl">
+      <h3 id="modalTitle" class="text-2xl font-bold text-white">Năng lực</h3>
+      <p id="modalSubtitle" class="text-white/90 mt-1">Triết gia Tập sự | 2 chủ đề</p>
+    </div>
+
+    <!-- Nội dung Modal -->
+    <div class="p-6">
+
+      <!-- Chủ đề 1 -->
+      <div class="mb-6">
+        <h4 id="topic1Title" class="text-xl font-bold text-gray-800 mb-3">📖 Chủ đề 1: Tên chủ đề</h4>
+
+        <!-- Video embed -->
+        <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+          <iframe id="video1" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Bài tập trắc nghiệm -->
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-lg p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              <span id="quiz1Count" class="font-semibold text-gray-800">5 câu hỏi trắc nghiệm</span>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors">
+              Làm bài →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t-2 border-gray-200 my-6"></div>
+
+      <!-- Chủ đề 2 -->
+      <div>
+        <h4 id="topic2Title" class="text-xl font-bold text-gray-800 mb-3">📖 Chủ đề 2: Tên chủ đề</h4>
+
+        <!-- Video embed -->
+        <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+          <iframe id="video2" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Bài tập trắc nghiệm -->
+        <div class="bg-blue-50 border-2 border-blue-200 rounded-lg p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              <span id="quiz2Count" class="font-semibold text-gray-800">5 câu hỏi trắc nghiệm</span>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors">
+              Làm bài →
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Modal -->
+    <div class="bg-gray-50 p-6 rounded-b-2xl border-t-2 border-gray-200">
+      <div class="flex items-center justify-between">
+        <div class="text-sm text-gray-600">
+          <span class="font-semibold">Tổng:</span> 2 video bài giảng + 10 câu hỏi trắc nghiệm
+        </div>
+        <button onclick="closeModal()" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+          Đóng
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- ./end Modal -->

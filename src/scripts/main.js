@@ -146,6 +146,59 @@
     });
   });
 
+  // Accordion toggle function for course sections
+  window.toggleAccordion = function (id) {
+    const content = document.getElementById(id);
+    const icon = document.getElementById("icon-" + id);
+
+    if (content.classList.contains("hidden")) {
+      content.classList.remove("hidden");
+      icon.style.transform = "rotate(180deg)";
+    } else {
+      content.classList.add("hidden");
+      icon.style.transform = "rotate(0deg)";
+    }
+  };
+
+  // Consultation form validation
+  const consultationForm = document.getElementById("consultationForm");
+  if (consultationForm) {
+    consultationForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const childName = this.childName.value.trim();
+      const birthYear = this.birthYear.value;
+      const parentPhone = this.parentPhone.value.trim();
+
+      // Validate child name
+      if (childName.length < 2) {
+        alert("Vui lòng nhập họ tên con (ít nhất 2 ký tự)");
+        return;
+      }
+
+      // Validate birth year
+      if (!birthYear) {
+        alert("Vui lòng chọn năm sinh");
+        return;
+      }
+
+      // Validate phone
+      const phoneRegex = /^0\d{9}$/;
+      if (!phoneRegex.test(parentPhone)) {
+        alert(
+          "Số điện thoại không hợp lệ. Vui lòng nhập 10 số, bắt đầu bằng 0"
+        );
+        return;
+      }
+
+      // Success
+      alert(
+        `Cảm ơn bạn đã đăng ký!\n\nThông tin:\n- Họ tên: ${childName}\n- Năm sinh: ${birthYear}\n- SĐT: ${parentPhone}\n\nChúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!`
+      );
+      this.reset();
+    });
+  }
+
   //shuffle
   const Shuffle = window.Shuffle;
   const tabItems = document.querySelector(".integration-tab-items");
@@ -171,4 +224,287 @@
       });
     });
   }
+
+  // Modal popup for competency videos
+  const modalData = {
+    // Triết gia Tập sự (6-9 tuổi)
+    "ts-hieubiet": {
+      title: "📚 Hiểu biết",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Tri thức cơ bản",
+          videoId: "rBfwtSlUgQQ",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Khám phá thế giới",
+          videoId: "YoXxevp1WRQ",
+          quizCount: 5,
+        },
+      ],
+    },
+    "ts-yeuthuong": {
+      title: "❤️ Yêu thương",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Yêu gia đình",
+          videoId: "BsVq5R_F6RA",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Yêu bạn bè",
+          videoId: "HEzQ2ITxCrQ",
+          quizCount: 5,
+        },
+      ],
+    },
+    "ts-suynghi": {
+      title: "🧠 Suy nghĩ",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Tư duy logic",
+          videoId: "i_FNdq2agBk",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Giải quyết vấn đề",
+          videoId: "UVQRU6nHjGY",
+          quizCount: 5,
+        },
+      ],
+    },
+    "ts-xahoi": {
+      title: "🤝 Xã hội",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Kỹ năng giao tiếp",
+          videoId: "R1vskiVDwl4",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Làm việc nhóm",
+          videoId: "saXfavo1OXo",
+          quizCount: 5,
+        },
+      ],
+    },
+    "ts-sangtao": {
+      title: "🎨 Sáng tạo",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Tư duy sáng tạo",
+          videoId: "cCL__14fqtg",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Nghệ thuật thể hiện",
+          videoId: "VqHSbMR_udo",
+          quizCount: 5,
+        },
+      ],
+    },
+    "ts-kynang": {
+      title: "🌟 Kỹ năng sống",
+      subtitle: "Triết gia Tập sự (6-9 tuổi) | 2 chủ đề",
+      headerClass: "from-green-500 to-green-600",
+      topics: [
+        {
+          title: "Chủ đề 1: Tự chăm sóc bản thân",
+          videoId: "Q80jAORd_TE",
+          quizCount: 5,
+        },
+        {
+          title: "Chủ đề 2: Quản lý cảm xúc",
+          videoId: "KJ4lLxazSBk",
+          quizCount: 5,
+        },
+      ],
+    },
+
+    // Triết gia Khám Phá (10-15 tuổi)
+    "kp-hieubiet": {
+      title: "📚 Hiểu biết",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Tri thức nâng cao",
+          videoId: "h11u3vtcpaY",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Phân tích thông tin",
+          videoId: "pVeq-0dIqpk",
+          quizCount: 8,
+        },
+      ],
+    },
+    "kp-yeuthuong": {
+      title: "❤️ Yêu thương",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Trách nhiệm xã hội",
+          videoId: "Dj8RE7FKuTY",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Đồng cảm sâu sắc",
+          videoId: "OPcOr5Z7_B4",
+          quizCount: 8,
+        },
+      ],
+    },
+    "kp-suynghi": {
+      title: "🧠 Suy nghĩ",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Tư duy phản biện",
+          videoId: "lLWEXRAnQd0",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Phân tích và tổng hợp",
+          videoId: "GPh2fyIxLxo",
+          quizCount: 8,
+        },
+      ],
+    },
+    "kp-xahoi": {
+      title: "🤝 Xã hội",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Lãnh đạo và quản lý",
+          videoId: "8T_jwq9ph8k",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Xây dựng cộng đồng",
+          videoId: "eIho2S0ZahI",
+          quizCount: 8,
+        },
+      ],
+    },
+    "kp-sangtao": {
+      title: "🎨 Sáng tạo",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Đổi mới và sáng tạo",
+          videoId: "gyM6rx69iqg",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Dự án sáng tạo",
+          videoId: "nKIu9yen5nc",
+          quizCount: 8,
+        },
+      ],
+    },
+    "kp-kynang": {
+      title: "🌟 Kỹ năng sống",
+      subtitle: "Triết gia Khám Phá (10-15 tuổi) | 2 chủ đề",
+      headerClass: "from-green-600 to-green-700",
+      topics: [
+        {
+          title: "Chủ đề 1: Quản lý thời gian",
+          videoId: "oTugjssqOT0",
+          quizCount: 8,
+        },
+        {
+          title: "Chủ đề 2: Tư duy phát triển",
+          videoId: "V1eYniJ0Rnk",
+          quizCount: 8,
+        },
+      ],
+    },
+  };
+
+  // Open modal function
+  window.openModal = function (modalId) {
+    const modal = document.getElementById("competencyModal");
+    const data = modalData[modalId];
+
+    if (!data) {
+      console.error("Modal data not found for:", modalId);
+      return;
+    }
+
+    // Update header
+    document.getElementById("modalTitle").textContent = data.title;
+    document.getElementById("modalSubtitle").textContent = data.subtitle;
+    const modalHeader = document.getElementById("modalHeader");
+    modalHeader.className = `bg-gradient-to-r ${data.headerClass} p-6 rounded-t-2xl`;
+
+    // Update topic 1
+    document.getElementById("topic1Title").textContent =
+      "📖 " + data.topics[0].title;
+    document.getElementById("video1").src =
+      "https://www.youtube.com/embed/" + data.topics[0].videoId;
+    document.getElementById("quiz1Count").textContent =
+      data.topics[0].quizCount + " câu hỏi trắc nghiệm";
+
+    // Update topic 2
+    document.getElementById("topic2Title").textContent =
+      "📖 " + data.topics[1].title;
+    document.getElementById("video2").src =
+      "https://www.youtube.com/embed/" + data.topics[1].videoId;
+    document.getElementById("quiz2Count").textContent =
+      data.topics[1].quizCount + " câu hỏi trắc nghiệm";
+
+    // Show modal with animation
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+
+    // Prevent body scroll
+    document.body.style.overflow = "hidden";
+  };
+
+  // Close modal function
+  window.closeModal = function () {
+    const modal = document.getElementById("competencyModal");
+
+    // Stop all videos
+    document.getElementById("video1").src = "";
+    document.getElementById("video2").src = "";
+
+    // Hide modal
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+
+    // Restore body scroll
+    document.body.style.overflow = "auto";
+  };
+
+  // Close modal when clicking outside
+  document
+    .getElementById("competencyModal")
+    ?.addEventListener("click", function (e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+  // Close modal with ESC key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeModal();
+    }
+  });
 })();

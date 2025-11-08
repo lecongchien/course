@@ -1,0 +1,243 @@
+<!-- Banner -->
+<section class="section pt-20 pb-12 bg-gradient-to-r from-pink-400 to-purple-500">
+  <div class="container">
+    <div class="row justify-center text-center text-white">
+      <div class="lg:col-8">
+        <h1 class="text-5xl font-bold mb-4">Tư Vấn Giáo Dục</h1>
+        <p class="text-xl">
+          Đội ngũ chuyên gia giáo dục sẵn sàng tư vấn và hỗ trợ phụ huynh 24/7
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Form tư vấn -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="lg:col-7">
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h2 class="text-3xl font-bold mb-6">Đăng Ký Tư Vấn Miễn Phí</h2>
+          <p class="text-gray-600 mb-8">
+            Vui lòng điền thông tin dưới đây, chuyên gia của chúng tôi sẽ liên hệ với bạn trong vòng 24h
+          </p>
+
+          <form id="consultForm" class="space-y-6">
+            <div class="form-group">
+              <label for="parentName" class="form-label">Họ Tên Phụ Huynh <span class="text-red-500">*</span></label>
+              <input
+                type="text"
+                id="parentName"
+                class="form-control"
+                placeholder="Nguyễn Văn A"
+                required
+              />
+              <span class="text-red-500 text-sm hidden" id="parentName-error">Vui lòng nhập họ tên</span>
+            </div>
+
+            <div class="row gx-4">
+              <div class="md:col-6">
+                <div class="form-group">
+                  <label for="phone" class="form-label">Số Điện Thoại <span class="text-red-500">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-control"
+                    placeholder="0912345678"
+                    required
+                  />
+                  <span class="text-red-500 text-sm hidden" id="phone-error">Số điện thoại không hợp lệ</span>
+                </div>
+              </div>
+              <div class="md:col-6">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="email@example.com"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="studentAge" class="form-label">Độ Tuổi Con</label>
+              <select id="studentAge" class="form-control">
+                <option value="">Chọn độ tuổi</option>
+                <option value="6-9">6-9 tuổi (Tập sự)</option>
+                <option value="10-15">10-15 tuổi (Khám phá)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="topic" class="form-label">Chủ Đề Tư Vấn <span class="text-red-500">*</span></label>
+              <select id="topic" class="form-control" required>
+                <option value="">Chọn chủ đề</option>
+                <option value="course">Tư vấn khóa học phù hợp</option>
+                <option value="curriculum">Tư vấn chương trình học</option>
+                <option value="tuition">Tư vấn học phí và ưu đãi</option>
+                <option value="progress">Tư vấn theo dõi tiến trình</option>
+                <option value="other">Tư vấn khác</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Nội Dung Cần Tư Vấn <span class="text-red-500">*</span></label>
+              <textarea
+                id="message"
+                class="form-control"
+                rows="5"
+                placeholder="Vui lòng mô tả chi tiết nội dung bạn cần tư vấn..."
+                required
+              ></textarea>
+              <span class="text-red-500 text-sm hidden" id="message-error">Vui lòng nhập nội dung</span>
+            </div>
+
+            <div class="form-group">
+              <label for="time" class="form-label">Thời Gian Phù Hợp Để Liên Hệ</label>
+              <div class="grid grid-cols-2 gap-4">
+                <label class="flex items-center">
+                  <input type="radio" name="time" value="morning" class="mr-2" />
+                  <span>Buổi sáng (8h-12h)</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="time" value="afternoon" class="mr-2" />
+                  <span>Buổi chiều (13h-17h)</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="time" value="evening" class="mr-2" checked />
+                  <span>Buổi tối (18h-20h)</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="time" value="anytime" class="mr-2" />
+                  <span>Bất kỳ lúc nào</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-full text-lg py-4">
+              Gửi Yêu Cầu Tư Vấn
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="lg:col-5 mt-8 lg:mt-0">
+        <!-- Thông tin liên hệ -->
+        <div class="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-xl p-8 text-white mb-6">
+          <h3 class="text-2xl font-bold mb-6">Liên Hệ Trực Tiếp</h3>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+              </svg>
+              <div>
+                <div class="font-semibold">Hotline</div>
+                <a href="tel:02812345678" class="text-lg">(028) 1234 5678</a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+              <div>
+                <div class="font-semibold">Email</div>
+                <a href="mailto:tuvan@giaoduc.vn" class="text-lg">tuvan@giaoduc.vn</a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold">Địa chỉ</div>
+                <div>123 Đường Giáo Dục, Quận 1<br/>TP. Hồ Chí Minh</div>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <div class="font-semibold">Giờ làm việc</div>
+                <div>Thứ 2 - Thứ 7: 8h - 20h<br/>Chủ nhật: 9h - 17h</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Câu hỏi thường gặp -->
+        <div class="bg-white rounded-2xl shadow-xl p-8">
+          <h3 class="text-2xl font-bold mb-6">Câu Hỏi Thường Gặp</h3>
+
+          <div class="space-y-4">
+            <div>
+              <h4 class="font-semibold mb-2">Học phí được thanh toán như thế nào?</h4>
+              <p class="text-gray-600 text-sm">Quý phụ huynh có thể thanh toán qua chuyển khoản ngân hàng, thẻ tín dụng hoặc trực tiếp tại trung tâm.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Có hỗ trợ học bù không?</h4>
+              <p class="text-gray-600 text-sm">Có, chúng tôi có chương trình học bù miễn phí cho các buổi học bị vắng mặt có lý do.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold mb-2">Làm sao để theo dõi tiến trình học tập?</h4>
+              <p class="text-gray-600 text-sm">Phụ huynh có thể theo dõi qua hệ thống online sau khi đăng nhập tài khoản.</p>
+            </div>
+          </div>
+
+          <a href="goc-giai-dap.html" class="btn btn-outline-primary w-full mt-6">
+            Xem Thêm Câu Hỏi
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+// Form validation for consultation
+document.getElementById('consultForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let isValid = true;
+
+  // Reset errors
+  document.querySelectorAll('[id$="-error"]').forEach(el => el.classList.add('hidden'));
+
+  // Validate parent name
+  const parentName = document.getElementById('parentName').value.trim();
+  if (parentName.length < 3) {
+    document.getElementById('parentName-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate phone
+  const phone = document.getElementById('phone').value.trim();
+  const phoneRegex = /^0\d{9}$/;
+  if (!phoneRegex.test(phone)) {
+    document.getElementById('phone-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate message
+  const message = document.getElementById('message').value.trim();
+  if (message.length < 10) {
+    document.getElementById('message-error').classList.remove('hidden');
+    document.getElementById('message-error').textContent = 'Vui lòng nhập ít nhất 10 ký tự';
+    isValid = false;
+  }
+
+  if (isValid) {
+    // Show success message
+    alert('Cảm ơn bạn đã đăng ký tư vấn! Chúng tôi sẽ liên hệ với bạn trong vòng 24h.');
+    this.reset();
+  }
+});
+</script>

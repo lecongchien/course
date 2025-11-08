@@ -2,56 +2,122 @@
   <div class="container max-w-full">
     <div class="row">
       <div class="min-h-[980px] bg-white py-10 lg:col-6 lg:py-[114px]">
-        <div class="mx-auto w-full max-w-[480px]">
-          <img class="mb-8" src="images/flower.svg" alt="" />
-          <h1 class="mb-4">Sing Up</h1>
-          <p>Donec sollicitudin molestie malesda sollitudin</p>
-          <div class="signin-options mt-10">
-            <a class="btn btn-outline-white block w-full text-dark" href="#"
-              >Sign Up With Google</a
-            >
-          </div>
-          <div
-            class="relative my-8 text-center after:absolute after:left-0 after:top-1/2 after:z-[0] after:w-full after:border-b after:border-border after:content-['']"
-          >
-            <span class="relative z-[1] inline-block bg-white px-2"
-              >Or Sign Up With Email</span
-            >
-          </div>
+        <div class="mx-auto w-full max-w-[540px] px-4">
+          <a href="index.html">
+            <img class="mb-8 h-8" src="images/logo.svg" alt="Logo" />
+          </a>
+          <h1 class="mb-4 text-4xl font-bold">Đăng Ký Học Viên</h1>
+          <p class="text-gray-600 mb-8">Tạo tài khoản để bắt đầu hành trình học tập cùng chúng tôi</p>
 
-          <form action="#">
+          <form id="signupForm" class="mt-8">
             <div class="form-group">
-              <label for="name" class="form-label">Full Name</label>
+              <label for="fullname" class="form-label">Họ và Tên Học Sinh <span class="text-red-500">*</span></label>
               <input
                 type="text"
-                id="name"
+                id="fullname"
                 class="form-control"
-                placeholder="Your Full Name"
+                placeholder="Nguyễn Văn A"
+                required
               />
+              <span class="text-red-500 text-sm hidden" id="fullname-error">Vui lòng nhập họ tên</span>
             </div>
+
             <div class="form-group mt-4">
-              <label for="email" class="form-label">Email Adrdess</label>
+              <label for="phone" class="form-label">Số Điện Thoại Phụ Huynh <span class="text-red-500">*</span></label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="0912345678"
+                required
+              />
+              <span class="text-red-500 text-sm hidden" id="phone-error">Số điện thoại không hợp lệ (10 số)</span>
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="birthYear" class="form-label">Năm Sinh <span class="text-red-500">*</span></label>
+              <input
+                type="number"
+                id="birthYear"
+                class="form-control"
+                placeholder="2015"
+                min="2000"
+                max="2020"
+                required
+              />
+              <span class="text-red-500 text-sm hidden" id="birthYear-error">Năm sinh không hợp lệ</span>
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="address" class="form-label">Địa Chỉ (Tỉnh/Thành phố)</label>
+              <select id="address" class="form-control">
+                <option value="">Chọn tỉnh/thành phố</option>
+                <option value="Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+                <option value="Cần Thơ">Cần Thơ</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group mt-4">
+              <label for="email" class="form-label">Email / Tên Đăng Nhập <span class="text-red-500">*</span></label>
               <input
                 type="email"
                 id="email"
                 class="form-control"
-                placeholder="Your Email Address"
+                placeholder="email@example.com"
+                required
               />
+              <span class="text-red-500 text-sm hidden" id="email-error">Email không hợp lệ</span>
             </div>
+
             <div class="form-group mt-4">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label">Mật Khẩu <span class="text-red-500">*</span></label>
               <input
                 type="password"
                 id="password"
                 class="form-control"
-                placeholder="Your Password"
+                placeholder="Ít nhất 6 ký tự"
+                required
               />
+              <span class="text-red-500 text-sm hidden" id="password-error">Mật khẩu phải có ít nhất 6 ký tự</span>
             </div>
-            <input
-              class="btn btn-primary mt-10 block w-full"
+
+            <div class="form-group mt-4">
+              <label for="confirmPassword" class="form-label">Nhập Lại Mật Khẩu <span class="text-red-500">*</span></label>
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-control"
+                placeholder="Nhập lại mật khẩu"
+                required
+              />
+              <span class="text-red-500 text-sm hidden" id="confirmPassword-error">Mật khẩu không khớp</span>
+            </div>
+
+            <div class="mt-6">
+              <label class="flex items-start">
+                <input type="checkbox" id="terms" class="mt-1 mr-2" required />
+                <span class="text-sm text-gray-600">
+                  Tôi đã đọc và đồng ý với
+                  <a href="terms-condition.html" class="text-primary hover:underline">Điều khoản sử dụng</a>
+                </span>
+              </label>
+            </div>
+
+            <button
+              class="btn btn-primary mt-8 block w-full"
               type="submit"
-              value="Sign Up"
-            />
+            >
+              Đăng Ký Ngay
+            </button>
+
+            <p class="mt-6 text-center text-gray-600">
+              Đã có tài khoản?
+              <a href="signin.html" class="text-primary hover:underline font-semibold">Đăng nhập ngay</a>
+            </p>
           </form>
         </div>
       </div>
@@ -64,45 +130,116 @@
           src="images/login-banner-bg.svg"
           alt=""
         />
-        <div class="w-full text-center">
-          <h2 class="h3 text-white">
-            A suite product accelerate <br />
-            your career design
+        <div class="w-full text-center relative z-10">
+          <h2 class="h3 text-white mb-8">
+            Khám Phá Thế Giới <br />
+            Tri Thức Cùng Chúng Tôi
           </h2>
-          <div class="swiper auth-banner-carousel">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  width="667"
-                  height="557"
-                  class="mx-auto"
-                  src="images/signup-carousel-img-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="667"
-                  height="557"
-                  class="mx-auto"
-                  src="images/signup-carousel-img-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  width="667"
-                  height="557"
-                  class="mx-auto"
-                  src="images/signup-carousel-img-1.png"
-                  alt=""
-                />
-              </div>
+          <div class="max-w-2xl mx-auto px-4">
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-6">
+              <h3 class="text-2xl font-bold text-white mb-4">Ưu Đãi Đặc Biệt</h3>
+              <p class="text-white/90 text-lg mb-4">
+                Đăng ký ngay hôm nay để nhận <strong>GIẢM 30%</strong> học phí khóa đầu tiên!
+              </p>
+              <ul class="text-left text-white space-y-3">
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Truy cập miễn phí thư viện học liệu
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Tư vấn miễn phí từ chuyên gia
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  Tham gia câu lạc bộ học tập
+                </li>
+              </ul>
             </div>
-            <div class="pagination"></div>
+            <img
+              width="500"
+              height="400"
+              class="mx-auto rounded-xl shadow-2xl"
+              src="images/signup-carousel-img-1.png"
+              alt="Học sinh học tập"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+// Form validation
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  let isValid = true;
+
+  // Reset errors
+  document.querySelectorAll('[id$="-error"]').forEach(el => el.classList.add('hidden'));
+
+  // Validate fullname
+  const fullname = document.getElementById('fullname').value.trim();
+  if (fullname.length < 3) {
+    document.getElementById('fullname-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate phone
+  const phone = document.getElementById('phone').value.trim();
+  const phoneRegex = /^0\d{9}$/;
+  if (!phoneRegex.test(phone)) {
+    document.getElementById('phone-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate birth year
+  const birthYear = parseInt(document.getElementById('birthYear').value);
+  const currentYear = new Date().getFullYear();
+  if (birthYear < 2000 || birthYear > currentYear) {
+    document.getElementById('birthYear-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate email
+  const email = document.getElementById('email').value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    document.getElementById('email-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate password
+  const password = document.getElementById('password').value;
+  if (password.length < 6) {
+    document.getElementById('password-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Validate confirm password
+  const confirmPassword = document.getElementById('confirmPassword').value;
+  if (password !== confirmPassword) {
+    document.getElementById('confirmPassword-error').classList.remove('hidden');
+    isValid = false;
+  }
+
+  // Check terms
+  const terms = document.getElementById('terms').checked;
+  if (!terms) {
+    alert('Vui lòng đồng ý với điều khoản sử dụng');
+    isValid = false;
+  }
+
+  if (isValid) {
+    alert('Đăng ký thành công! Vui lòng đăng nhập.');
+    window.location.href = 'signin.html';
+  }
+});
+</script>

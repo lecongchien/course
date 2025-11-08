@@ -1,0 +1,334 @@
+<!-- Banner -->
+<section class="section pt-20 pb-12 bg-gradient-to-r from-blue-400 to-cyan-500">
+  <div class="container">
+    <div class="row justify-center text-center text-white">
+      <div class="lg:col-8">
+        <h1 class="text-5xl font-bold mb-4">Thư Viện Học Liệu</h1>
+        <p class="text-xl">
+          Kho tàng kiến thức phong phú với video, tài liệu và ebook miễn phí
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Search and Filter -->
+<section class="section pt-8 pb-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="bg-white rounded-xl shadow-lg p-6">
+          <div class="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              id="searchInput"
+              class="form-control flex-1"
+              placeholder="Tìm kiếm tài liệu, video..."
+            />
+            <select id="filterCategory" class="form-control md:w-48">
+              <option value="all">Tất cả danh mục</option>
+              <option value="video">Video học tập</option>
+              <option value="ebook">Sách điện tử</option>
+              <option value="document">Tài liệu</option>
+              <option value="worksheet">Bài tập</option>
+            </select>
+            <button class="btn btn-primary md:w-32">Tìm kiếm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Library Content -->
+<section class="section">
+  <div class="container">
+
+    <!-- Video học tập -->
+    <div class="mb-16">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold">Video Học Tập</h2>
+        <a href="#" class="text-primary hover:underline">Xem tất cả →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Video 1 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="relative h-48 bg-gradient-to-br from-purple-400 to-pink-400">
+            <img src="images/posts/post-1.png" class="w-full h-full object-cover" alt="Video" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              MỚI
+            </div>
+            <div class="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
+              15:30
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-2">Giới Thiệu Về Tư Duy Triết Học</h3>
+            <p class="text-gray-600 text-sm mb-4">Khám phá thế giới triết học thông qua các câu hỏi đơn giản và thú vị dành cho trẻ em...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">Lượt xem: 1,234</span>
+              <button class="text-primary hover:underline text-sm font-semibold">Xem ngay</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="relative h-48 bg-gradient-to-br from-blue-400 to-cyan-400">
+            <img src="images/posts/post-2.png" class="w-full h-full object-cover" alt="Video" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
+              23:45
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-2">Kỹ Năng Tư Duy Phản Biện</h3>
+            <p class="text-gray-600 text-sm mb-4">Học cách đặt câu hỏi, phân tích và đưa ra ý kiến của riêng mình...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">Lượt xem: 2,567</span>
+              <button class="text-primary hover:underline text-sm font-semibold">Xem ngay</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="relative h-48 bg-gradient-to-br from-green-400 to-teal-400">
+            <img src="images/posts/post-3.png" class="w-full h-full object-cover" alt="Video" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <button class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+                <svg class="w-8 h-8 text-primary ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="absolute bottom-4 right-4 bg-black/70 text-white px-2 py-1 rounded text-sm">
+              18:20
+            </div>
+          </div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg mb-2">Sáng Tạo Và Giải Quyết Vấn Đề</h3>
+            <p class="text-gray-600 text-sm mb-4">Phát triển khả năng sáng tạo và tìm ra giải pháp cho các vấn đề...</p>
+            <div class="flex items-center justify-between">
+              <span class="text-sm text-gray-500">Lượt xem: 3,891</span>
+              <button class="text-primary hover:underline text-sm font-semibold">Xem ngay</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Sách điện tử -->
+    <div class="mb-16">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold">Sách Điện Tử</h2>
+        <a href="#" class="text-primary hover:underline">Xem tất cả →</a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+
+        <!-- Ebook 1 -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-lg shadow-lg mb-3 aspect-[3/4] bg-gradient-to-br from-yellow-200 to-orange-300">
+            <img src="images/about/philosophy.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" alt="Ebook" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <button class="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity">
+                Đọc ngay
+              </button>
+            </div>
+          </div>
+          <h4 class="font-semibold mb-1 line-clamp-2">100 Câu Hỏi Triết Học Cho Trẻ</h4>
+          <p class="text-sm text-gray-500">Tác giả: Nguyễn Văn A</p>
+        </div>
+
+        <!-- Ebook 2 -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-lg shadow-lg mb-3 aspect-[3/4] bg-gradient-to-br from-blue-200 to-purple-300">
+            <img src="images/about/mission.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" alt="Ebook" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <button class="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity">
+                Đọc ngay
+              </button>
+            </div>
+          </div>
+          <h4 class="font-semibold mb-1 line-clamp-2">Tư Duy Logic Cho Trẻ Em</h4>
+          <p class="text-sm text-gray-500">Tác giả: Trần Thị B</p>
+        </div>
+
+        <!-- Ebook 3 -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-lg shadow-lg mb-3 aspect-[3/4] bg-gradient-to-br from-green-200 to-teal-300">
+            <img src="images/about/vision.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" alt="Ebook" />
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <button class="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity">
+                Đọc ngay
+              </button>
+            </div>
+          </div>
+          <h4 class="font-semibold mb-1 line-clamp-2">Phát Triển Tư Duy Sáng Tạo</h4>
+          <p class="text-sm text-gray-500">Tác giả: Lê Văn C</p>
+        </div>
+
+        <!-- Ebook 4 -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-lg shadow-lg mb-3 aspect-[3/4] bg-gradient-to-br from-pink-200 to-red-300">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <button class="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity">
+                Đọc ngay
+              </button>
+            </div>
+          </div>
+          <h4 class="font-semibold mb-1 line-clamp-2">Kỹ Năng Giao Tiếp Cho Trẻ</h4>
+          <p class="text-sm text-gray-500">Tác giả: Phạm Thị D</p>
+        </div>
+
+        <!-- Ebook 5 -->
+        <div class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-lg shadow-lg mb-3 aspect-[3/4] bg-gradient-to-br from-indigo-200 to-purple-300">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+              <button class="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-lg font-semibold text-sm transition-opacity">
+                Đọc ngay
+              </button>
+            </div>
+          </div>
+          <h4 class="font-semibold mb-1 line-clamp-2">Quản Lý Cảm Xúc Hiệu Quả</h4>
+          <p class="text-sm text-gray-500">Tác giả: Hoàng Văn E</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tài liệu học tập -->
+    <div>
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold">Tài Liệu & Bài Tập</h2>
+        <a href="#" class="text-primary hover:underline">Xem tất cả →</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Document 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
+          <div class="flex items-start">
+            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2">Bài Tập Tư Duy Logic - Cấp Độ 1</h3>
+              <p class="text-gray-600 text-sm mb-3">Bộ bài tập rèn luyện tư duy logic cho trẻ 6-9 tuổi với 50 bài tập từ dễ đến khó.</p>
+              <div class="flex items-center gap-4 text-sm text-gray-500">
+                <span>📄 PDF</span>
+                <span>15 trang</span>
+                <span>🔽 234 lượt tải</span>
+              </div>
+              <button class="mt-3 text-primary hover:underline font-semibold flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                Tải xuống
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Document 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
+          <div class="flex items-start">
+            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2">Hướng Dẫn Phụ Huynh - Dạy Con Tư Duy</h3>
+              <p class="text-gray-600 text-sm mb-3">Cẩm nang dành cho phụ huynh để hỗ trợ con phát triển tư duy triết học tại nhà.</p>
+              <div class="flex items-center gap-4 text-sm text-gray-500">
+                <span>📄 PDF</span>
+                <span>28 trang</span>
+                <span>🔽 567 lượt tải</span>
+              </div>
+              <button class="mt-3 text-primary hover:underline font-semibold flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                Tải xuống
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Document 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
+          <div class="flex items-start">
+            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2">Trò Chơi Phát Triển Tư Duy</h3>
+              <p class="text-gray-600 text-sm mb-3">Tổng hợp 30 trò chơi giúp trẻ phát triển tư duy sáng tạo và kỹ năng giải quyết vấn đề.</p>
+              <div class="flex items-center gap-4 text-sm text-gray-500">
+                <span>📄 PDF</span>
+                <span>20 trang</span>
+                <span>🔽 891 lượt tải</span>
+              </div>
+              <button class="mt-3 text-primary hover:underline font-semibold flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                Tải xuống
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Document 4 -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
+          <div class="flex items-start">
+            <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <svg class="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-bold text-lg mb-2">Bài Kiểm Tra Đánh Giá Năng Lực</h3>
+              <p class="text-gray-600 text-sm mb-3">Bộ đề kiểm tra đánh giá năng lực tư duy của trẻ theo từng cấp độ.</p>
+              <div class="flex items-center gap-4 text-sm text-gray-500">
+                <span>📄 PDF</span>
+                <span>12 trang</span>
+                <span>🔽 445 lượt tải</span>
+              </div>
+              <button class="mt-3 text-primary hover:underline font-semibold flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                Tải xuống
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
