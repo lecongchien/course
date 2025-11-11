@@ -507,4 +507,21 @@
       closeModal();
     }
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".banner-swiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000, // Tự động cuộn sau 3 giây
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
 })();
