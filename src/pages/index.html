@@ -278,699 +278,216 @@
 
 <!-- ./end Khóa học Section -->
 
-<!-- Nhận tư vấn và khởi hành Section -->
-<section
-  class="section bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 py-20"
->
-  <div class="container">
-    <div class="mb-12 text-center">
-      <span
-        class="mb-4 inline-block rounded-full bg-indigo-100 px-4 py-2 text-sm font-semibold text-indigo-700"
-        >💬 Tư vấn miễn phí</span
-      >
-      <h2 class="mb-4 text-4xl font-bold text-gray-900">
-        Nhận tư vấn và khởi hành
-      </h2>
-      <p class="mx-auto max-w-2xl text-gray-600">
-        Đăng ký ngay để nhận tư vấn miễn phí và bắt đầu hành trình học tập
-      </p>
-    </div>
-
-    <div
-      class="mx-auto max-w-5xl overflow-hidden rounded-3xl bg-white shadow-xl"
-    >
-      <div class="grid grid-cols-1 gap-0 lg:grid-cols-2">
-        <!-- Form bên trái -->
-        <div class="p-8 lg:p-10">
-          <h3 class="mb-6 text-2xl font-bold text-gray-900">
-            Thông tin đăng ký
-          </h3>
-          <form id="consultationForm" class="space-y-5">
-            <!-- Họ tên con -->
-            <div>
-              <label class="mb-2 block text-sm font-semibold text-gray-700">
-                Họ tên con <span class="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                name="childName"
-                required
-                placeholder="Nhập họ tên con"
-                class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
-              />
-            </div>
-
-            <!-- Năm sinh -->
-            <div>
-              <label class="mb-2 block text-sm font-semibold text-gray-700">
-                Năm sinh <span class="text-red-500">*</span>
-              </label>
-              <select
-                name="birthYear"
-                required
-                class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
-              >
-                <option value="">Chọn năm sinh</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-                <option value="2010">2010</option>
-                <option value="2009">2009</option>
-                <option value="2008">2008</option>
-              </select>
-            </div>
-
-            <!-- SĐT bố mẹ -->
-            <div>
-              <label class="mb-2 block text-sm font-semibold text-gray-700">
-                SĐT bố mẹ <span class="text-red-500">*</span>
-              </label>
-              <input
-                type="tel"
-                name="parentPhone"
-                required
-                placeholder="Nhập số điện thoại"
-                pattern="0[0-9]{9}"
-                class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 transition-all focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500"
-              />
-              <p class="mt-1 text-xs text-gray-500">
-                Định dạng: 10 số, bắt đầu bằng 0
-              </p>
-            </div>
-
-            <!-- Nút submit -->
-            <button
-              type="submit"
-              class="w-full rounded-xl bg-indigo-600 px-6 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:bg-indigo-700 hover:shadow-xl"
-            >
-              Gửi yêu cầu tư vấn →
-            </button>
-          </form>
-        </div>
-
-        <!-- Thông tin bên phải -->
-        <div
-          class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 text-white lg:p-10"
-        >
-          <h3 class="mb-6 text-2xl font-bold">Lợi ích khi đăng ký</h3>
-
-          <div class="space-y-5">
-            <div class="flex items-start">
-              <div class="mr-4 mt-1 rounded-full bg-white/20 p-3 backdrop-blur">
-                <svg
-                  class="h-5 w-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 class="mb-1 font-bold text-white">Tư vấn miễn phí</h4>
-                <p class="text-sm text-indigo-100">
-                  Chuyên gia sẽ tư vấn chương trình phù hợp với con bạn
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="mr-4 mt-1 rounded-full bg-white/20 p-3 backdrop-blur">
-                <svg
-                  class="h-5 w-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 class="mb-1 font-bold text-white">Học thử miễn phí</h4>
-                <p class="text-sm text-indigo-100">
-                  Trải nghiệm 2 buổi học đầu tiên hoàn toàn miễn phí
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="mr-4 mt-1 rounded-full bg-white/20 p-3 backdrop-blur">
-                <svg
-                  class="h-5 w-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 class="mb-1 font-bold text-white">Ưu đãi đặc biệt</h4>
-                <p class="text-sm text-indigo-100">
-                  Giảm 20% học phí khi đăng ký sớm
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="mr-4 mt-1 rounded-full bg-white/20 p-3 backdrop-blur">
-                <svg
-                  class="h-5 w-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 class="mb-1 font-bold text-white">Hỗ trợ 24/7</h4>
-                <p class="text-sm text-indigo-100">
-                  Đội ngũ tư vấn sẵn sàng hỗ trợ mọi lúc
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start">
-              <div class="mr-4 mt-1 rounded-full bg-white/20 p-3 backdrop-blur">
-                <svg
-                  class="h-5 w-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div>
-                <h4 class="mb-1 font-bold text-white">Cam kết chất lượng</h4>
-                <p class="text-sm text-indigo-100">
-                  Hoàn tiền 100% nếu không hài lòng
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hotline -->
-          <div class="mt-8 rounded-2xl bg-white p-5">
-            <p class="mb-2 text-sm text-gray-600">Hoặc gọi ngay Hotline</p>
-            <a
-              href="tel:1900123456"
-              class="text-3xl font-bold text-indigo-600 transition-colors hover:text-indigo-700"
-            >
-              1900 123 456
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Nhận tư vấn và khởi hành Section -->
-
-<!-- Vòm sáng Section -->
-<section class="section bg-gradient-to-br py-16">
-  <div class="container">
-    <div class="mb-8 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-gray-800">Vòm sáng</h2>
-      <p class="text-lg text-gray-700">
-        Không gian sáng tạo và khám phá tri thức
-      </p>
-    </div>
-
-    <div class="mx-auto max-w-6xl">
-      <div class="rounded-2xl bg-white p-8 shadow-xl">
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Vòm sáng 1 -->
-          <div
-            class="rounded-lg border-2 border-lime-500 p-6 transition-all hover:shadow-lg"
-          >
-            <div class="mb-4 text-center">
-              <div
-                class="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-lime-500"
-              >
-                <svg
-                  class="h-8 w-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Vòm sáng</h3>
-            </div>
-            <div class="space-y-2 text-sm">
-              <p class="text-gray-700">
-                📖 <strong>Nội dung:</strong> Các topic nhỏ
-              </p>
-              <p class="text-gray-700">
-                🎥 <strong>Video:</strong> Nhúng link Youtube
-              </p>
-              <p class="text-gray-700">
-                ❓ <strong>Bài tập:</strong> Câu hỏi trắc nghiệm
-              </p>
-            </div>
-            <button
-              class="mt-4 w-full rounded-lg bg-lime-500 py-2 font-semibold text-white transition-colors hover:bg-lime-600"
-            >
-              Khám phá →
-            </button>
-          </div>
-
-          <!-- Tạp chí Rắc rối -->
-          <div
-            class="rounded-lg border-2 border-lime-500 p-6 transition-all hover:shadow-lg"
-          >
-            <div class="mb-4 text-center">
-              <div
-                class="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-lime-500"
-              >
-                <svg
-                  class="h-8 w-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">Tạp chí Rắc rối</h3>
-            </div>
-            <div class="space-y-2 text-sm">
-              <p class="text-gray-700">
-                📖 <strong>Nội dung:</strong> Review sách
-              </p>
-              <p class="text-gray-700">📚 <strong>Thể loại:</strong> Đa dạng</p>
-              <p class="text-gray-700">
-                ⭐ <strong>Đánh giá:</strong> Chuyên sâu
-              </p>
-            </div>
-            <button
-              class="mt-4 w-full rounded-lg bg-lime-500 py-2 font-semibold text-white transition-colors hover:bg-lime-600"
-            >
-              Xem tạp chí →
-            </button>
-          </div>
-
-          <!-- Tiệm câu hỏi Trên Cây -->
-          <div
-            class="rounded-lg border-2 border-lime-500 p-6 transition-all hover:shadow-lg"
-          >
-            <div class="mb-4 text-center">
-              <div
-                class="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-lime-500"
-              >
-                <svg
-                  class="h-8 w-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-gray-800">
-                Tiệm câu hỏi Trên Cây
-              </h3>
-            </div>
-            <div class="space-y-2 text-sm">
-              <p class="text-gray-700">
-                💬 <strong>Nội dung:</strong> Topic hỏi đáp
-              </p>
-              <p class="text-gray-700">
-                👥 <strong>Cộng đồng:</strong> Tương tác
-              </p>
-              <p class="text-gray-700">
-                ✅ <strong>Giải đáp:</strong> Nhanh chóng
-              </p>
-            </div>
-            <button
-              class="mt-4 w-full rounded-lg bg-lime-500 py-2 font-semibold text-white transition-colors hover:bg-lime-600"
-            >
-              Đặt câu hỏi →
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Vòm sáng Section -->
-
-<!-- Thư viện lơ lững Section -->
-<section class="section py-16">
-  <div class="container">
-    <div class="mb-8 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-gray-800">Thư viện lơ lững</h2>
-      <p class="text-lg text-gray-700">Kho tàng tri thức và tài liệu học tập</p>
-    </div>
-
-    <div class="mx-auto max-w-5xl rounded-2xl bg-white p-8 shadow-xl">
-      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <!-- Review sách -->
-        <div class="rounded-xl bg-gradient-to-br from-pink-50 to-pink-100 p-6">
-          <div class="mb-4 flex items-center">
-            <div
-              class="mr-3 flex h-12 w-12 items-center justify-center rounded-lg bg-pink-500"
-            >
-              <svg
-                class="h-6 w-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800">Review sách</h3>
-          </div>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>✓ Đánh giá sách hay cho trẻ</li>
-            <li>✓ Phân tích nội dung sâu sắc</li>
-            <li>✓ Gợi ý sách theo độ tuổi</li>
-            <li>✓ Review từ chuyên gia</li>
-          </ul>
-          <a
-            href="thu-vien.html#review-sach"
-            class="mt-4 inline-block font-semibold text-pink-600 hover:text-pink-700"
-          >
-            Xem review →
-          </a>
-        </div>
-
-        <!-- Review sách (duplicate for display) -->
-        <div class="rounded-xl bg-gradient-to-br from-pink-50 to-pink-100 p-6">
-          <div class="mb-4 flex items-center">
-            <div
-              class="mr-3 flex h-12 w-12 items-center justify-center rounded-lg bg-pink-500"
-            >
-              <svg
-                class="h-6 w-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800">Tài liệu học tập</h3>
-          </div>
-          <ul class="space-y-2 text-sm text-gray-700">
-            <li>✓ E-book chất lượng cao</li>
-            <li>✓ PDF tài liệu tham khảo</li>
-            <li>✓ Video bài giảng</li>
-            <li>✓ Bài tập thực hành</li>
-          </ul>
-          <a
-            href="thu-vien.html"
-            class="mt-4 inline-block font-semibold text-pink-600 hover:text-pink-700"
-          >
-            Vào thư viện →
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Thư viện lơ lững Section -->
-
-<!-- Tiệm câu hỏi Trên Cây Section -->
-<section class="section py-16">
-  <div class="container">
-    <div class="mb-8 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-white">Tiệm câu hỏi Trên Cây</h2>
-      <p class="text-lg text-white">Không gian hỏi đáp và trao đổi kiến thức</p>
-    </div>
-
-    <div class="mx-auto max-w-4xl rounded-2xl bg-white p-8 shadow-xl">
-      <div class="mb-6 text-center">
-        <h3 class="mb-2 text-2xl font-bold text-gray-800">Topic hỏi đáp</h3>
-        <p class="text-gray-600">
-          Đặt câu hỏi và nhận câu trả lời từ cộng đồng
-        </p>
-      </div>
-
-      <div class="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div
-          class="rounded-lg border-2 border-sky-500 p-5 transition-all hover:shadow-lg"
-        >
-          <div class="flex items-start">
-            <span class="mr-3 text-3xl">💡</span>
-            <div>
-              <h4 class="mb-2 text-lg font-bold text-gray-800">
-                Hỏi về bài học
-              </h4>
-              <p class="text-sm text-gray-600">
-                Giải đáp thắc mắc về nội dung học tập
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="rounded-lg border-2 border-sky-500 p-5 transition-all hover:shadow-lg"
-        >
-          <div class="flex items-start">
-            <span class="mr-3 text-3xl">🤔</span>
-            <div>
-              <h4 class="mb-2 text-lg font-bold text-gray-800">
-                Thảo luận chung
-              </h4>
-              <p class="text-sm text-gray-600">
-                Chia sẻ kiến thức và kinh nghiệm
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center">
-        <a
-          href="goc-giai-dap.html"
-          class="inline-block rounded-lg bg-sky-500 px-8 py-3 font-bold text-white shadow-lg transition-colors hover:bg-sky-600"
-        >
-          Vào Tiệm câu hỏi →
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- ./end Tiệm câu hỏi Trên Cây Section -->
+<!-- Main Content -->
+<!-- Newsletter Section -->
+<section class="mt-16 bg-gradient-to-r from-purple-900 to-purple-800 py-16">
+  <div class="mx-auto max-w-4xl px-4 text-center">
+    <h2 class="mb-2 text-3xl font-bold text-white md:text-4xl">
+      Thêm thông tin về
+      <span class="text-yellow-400">HG education</span>
+    </h2>
+    <h3 class="mb-4 text-xl font-semibold text-cyan-300 md:text-2xl">
+      Đăng kí nhận mail ưu đãi
+    </h3>
+    <p class="mb-8 text-gray-200">
+      Hãy nhập email của bạn vào đây để nhận tin mới nhất!
+    </p>
 
-<!-- Tram trắc trở Section -->
-<section class="section bg-gradient-to-br py-16">
-  <div class="container">
-    <div class="mb-8 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-black">Tram trắc trở</h2>
-      <p class="text-lg text-black">Trạm dừng chân cho những vấn đề khó</p>
-    </div>
-
-    <div class="mx-auto max-w-4xl rounded-2xl p-8 shadow-xl">
-      <div class="space-y-4">
-        <div class="flex items-start rounded-lg bg-blue-50 p-4">
-          <div class="mr-4 mt-1 rounded-full bg-blue-500 p-2">
-            <svg
-              class="h-5 w-5 text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 class="mb-1 font-bold text-gray-800">Tư vấn tâm lý</h4>
-            <p class="text-sm text-gray-600">
-              Hỗ trợ tâm lý cho học sinh và phụ huynh
-            </p>
-          </div>
-        </div>
-
-        <div class="flex items-start rounded-lg bg-blue-50 p-4">
-          <div class="mr-4 mt-1 rounded-full bg-blue-500 p-2">
-            <svg
-              class="h-5 w-5 text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 class="mb-1 font-bold text-gray-800">Giải đáp khó khăn</h4>
-            <p class="text-sm text-gray-600">
-              Hỗ trợ giải quyết các vấn đề học tập phức tạp
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-6 text-center">
-        <a
-          href="phong-yeu-cau.html"
-          class="inline-block rounded-lg bg-blue-500 px-8 py-3 font-bold text-white shadow-lg transition-colors hover:bg-blue-600"
-        >
-          Tìm hiểu thêm →
-        </a>
-      </div>
+    <div class="mx-auto flex max-w-2xl gap-2">
+      <input
+        type="email"
+        placeholder="Nhập email"
+        class="flex-1 rounded-full px-6 py-3 text-gray-800 focus:outline-none"
+      />
+      <button
+        class="flex items-center gap-2 rounded-full bg-yellow-400 px-8 py-3 font-bold text-white transition-colors duration-300 hover:bg-yellow-500"
+      >
+        ĐĂNG KY <span>✓</span>
+      </button>
     </div>
   </div>
 </section>
-<!-- ./end Tram trắc trở Section -->
 
-<!-- Tạp chí Rắc rối Section (duplicate) -->
-<section class="section bg-gradient-to-br py-16">
-  <div class="container">
-    <div class="mb-8 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-black">Tạp chí Rắc rối</h2>
-      <p class="text-lg text-black">Những bài viết sâu sắc và thú vị</p>
-    </div>
-
-    <div class="mx-auto max-w-5xl rounded-2xl bg-white p-8 shadow-xl">
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <div
-          class="rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center"
-        >
-          <div
-            class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600"
-          >
-            <svg
-              class="h-8 w-8 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-              />
-            </svg>
-          </div>
-          <h3 class="mb-2 text-lg font-bold text-gray-800">Review sách</h3>
-          <p class="text-sm text-gray-600">Đánh giá và giới thiệu sách hay</p>
-        </div>
-
-        <div
-          class="rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center"
-        >
-          <div
-            class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600"
-          >
-            <svg
-              class="h-8 w-8 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-              />
-            </svg>
-          </div>
-          <h3 class="mb-2 text-lg font-bold text-gray-800">
-            Bài viết chuyên sâu
-          </h3>
-          <p class="text-sm text-gray-600">Các chủ đề giáo dục ý nghĩa</p>
-        </div>
-
-        <div
-          class="rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-center"
-        >
-          <div
-            class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-600"
-          >
-            <svg
-              class="h-8 w-8 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
-              />
-            </svg>
-          </div>
-          <h3 class="mb-2 text-lg font-bold text-gray-800">Góc chia sẻ</h3>
-          <p class="text-sm text-gray-600">Trải nghiệm từ cộng đồng</p>
-        </div>
+<main class="mx-auto max-w-7xl px-4 py-12">
+  <!-- Article Grid -->
+  <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Card 1 -->
+    <article
+      class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg"
+    >
+      <div class="relative h-64 w-full overflow-hidden bg-gray-200">
+        <img
+          src="/images/Gemini_Generated_Image_xshc43xshc43xshc.png"
+          alt="Lầm sao để kích thích tò mò của trẻ"
+          class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+        />
       </div>
-
-      <div class="mt-8 text-center">
+      <div class="p-6">
+        <div class="mb-3 flex items-center gap-2 text-sm text-gray-500">
+          <span>👤 HG</span>
+          <span>📅 12/08/2021</span>
+        </div>
+        <h2 class="mb-3 line-clamp-2 text-lg font-bold text-gray-800">
+          Góc Người Hay Lo
+        </h2>
+        <p class="mb-6 line-clamp-3 text-sm text-gray-600">
+          Trí tò mò là thứ nuôi dưỡng hứng thú học hỏi của trẻ, điều này về cùng
+          hữu ích trong tương lai sau này. Cha mẹ thường cảm thấy phiền phức khi
+          phải trả lời...
+        </p>
         <a
-          href="thu-vien.html#tap-chi"
-          class="inline-block rounded-lg bg-blue-600 px-8 py-3 font-bold text-white shadow-lg transition-colors hover:bg-blue-700"
+          href="/tap-chi-rac-roi.html"
+          class="inline-block rounded-full bg-cyan-500 px-6 py-2 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
         >
-          Đọc tạp chí →
+          Xem thêm
         </a>
       </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Tạp chí Rắc rối Section -->
+    </article>
 
+    <!-- Card 2 -->
+    <article
+      class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg"
+    >
+      <div class="relative h-64 w-full overflow-hidden bg-gray-200">
+        <img
+          src="/images/Gemini_Generated_Image_td9136td9136td91.png"
+          alt="Con nghi học tránh dịch"
+          class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div class="p-6">
+        <div class="mb-3 flex items-center gap-2 text-sm text-gray-500">
+          <span>👤 HG</span>
+          <span>📅 12/08/2021</span>
+        </div>
+        <h2 class="mb-3 line-clamp-2 text-lg font-bold text-gray-800">
+          Tạp chí rắc rối
+        </h2>
+        <p class="mb-6 line-clamp-3 text-sm text-gray-600">
+          Lên lịch sinh hoạt một cách hợp lý - lịch sinh hoạt của bé tốt nhất là
+          nên gắn nhất với lịch sinh hoạt khi bé còn đi học. Vì dự thời gian
+          thức dậy, à...
+        </p>
+        <a
+          href="/tap-chi-rac-roi.html"
+          class="inline-block rounded-full bg-cyan-500 px-6 py-2 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
+        >
+          Xem thêm
+        </a>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article
+      class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg"
+    >
+      <div class="relative h-64 w-full overflow-hidden bg-gray-200">
+        <img
+          src="/images/Gemini_Generated_Image_nh5agjnh5agjnh5a.png"
+          alt="Giáo dục kỹ năng sống"
+          class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div class="p-6">
+        <div class="mb-3 flex items-center gap-2 text-sm text-gray-500">
+          <span>👤 HG</span>
+          <span>📅 12/08/2021</span>
+        </div>
+        <h2 class="mb-3 line-clamp-2 text-lg font-bold text-gray-800">
+          Tiệm câu hỏi Trên Cây
+        </h2>
+        <p class="mb-6 line-clamp-3 text-sm text-gray-600">
+          "Một cây làm chẳng lên nonBa cây chụm lại lên hơn nửi cao" Bất kỳ một
+          sự thành công nào không thể không kể đến sự cố gắng nỗ lực của bản
+          thân và t...
+        </p>
+        <a
+          href="/tap-chi-rac-roi.html"
+          class="inline-block rounded-full bg-cyan-500 px-6 py-2 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
+        >
+          Xem thêm
+        </a>
+      </div>
+    </article>
+  </div>
+
+  <div class="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Card 1 -->
+    <article
+      class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg"
+    >
+      <div class="relative h-64 w-full overflow-hidden bg-gray-200">
+        <img
+          src="/images/Gemini_Generated_Image_td9136td9136td91.png"
+          alt="Con nghi học tránh dịch"
+          class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div class="p-6">
+        <div class="mb-3 flex items-center gap-2 text-sm text-gray-500">
+          <span>👤 HG</span>
+          <span>📅 12/08/2021</span>
+        </div>
+        <h2 class="mb-3 line-clamp-2 text-lg font-bold text-gray-800">
+          Trạm trắc trở
+        </h2>
+        <p class="mb-6 line-clamp-3 text-sm text-gray-600">
+          Trí tò mò là thứ nuôi dưỡng hứng thú học hỏi của trẻ, điều này về cùng
+          hữu ích trong tương lai sau này. Cha mẹ thường cảm thấy phiền phức khi
+          phải trả lời...
+        </p>
+        <a
+          href="/tap-chi-rac-roi.html"
+          class="inline-block rounded-full bg-cyan-500 px-6 py-2 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
+        >
+          Xem thêm
+        </a>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article
+      class="overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg"
+    >
+      <div class="relative h-64 w-full overflow-hidden bg-gray-200">
+        <img
+          src="/images/Gemini_Generated_Image_xshc43xshc43xshc.png"
+          alt="Lầm sao để kích thích tò mò của trẻ"
+          class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <div class="p-6">
+        <div class="mb-3 flex items-center gap-2 text-sm text-gray-500">
+          <span>👤 HG</span>
+          <span>📅 12/08/2021</span>
+        </div>
+        <h2 class="mb-3 line-clamp-2 text-lg font-bold text-gray-800">
+          Thư viện lơ lửng
+        </h2>
+        <p class="mb-6 line-clamp-3 text-sm text-gray-600">
+          Lên lịch sinh hoạt một cách hợp lý - lịch sinh hoạt của bé tốt nhất là
+          nên gắn nhất với lịch sinh hoạt khi bé còn đi học. Vì dự thời gian
+          thức dậy, à...
+        </p>
+        <a
+          href="/tap-chi-rac-roi.html"
+          class="inline-block rounded-full bg-cyan-500 px-6 py-2 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
+        >
+          Xem thêm
+        </a>
+      </div>
+    </article>
+  </div>
+  <!-- Load More Section -->
+  <div class="mt-12 flex justify-center">
+    <button
+      class="rounded-lg bg-gray-200 px-8 py-3 font-semibold text-gray-700 transition-colors duration-300 hover:bg-gray-300"
+    >
+      Xem thêm bài viết
+    </button>
+  </div>
+</main>
 <!-- Khối chức năng chính -->
 <section class="section key-feature relative">
   <div class="container">
@@ -1251,470 +768,385 @@
 <!-- ./end Khối chức năng -->
 
 <!-- Giới thiệu về chúng tôi -->
-<section class="section services bg-gray-50">
-  <div class="container">
-    <div class="row mb-16 items-center">
-      <div class="lg:col-6">
-        <img
-          class="w-full rounded-2xl object-contain shadow-lg"
-          src="images/collaboration.png"
-          alt="Học sinh học tập"
-        />
-      </div>
-      <div class="mt-6 lg:col-6 lg:mt-0">
-        <div class="text-container lg:pl-12">
-          <h2 class="text-3xl font-bold lg:text-4xl">
-            Phương Pháp Giáo Dục Hiện Đại
-          </h2>
-          <p class="mt-4 text-lg text-gray-700">
-            Chúng tôi áp dụng phương pháp giáo dục triết học cho trẻ em, giúp
-            các em phát triển tư duy phản biện, sáng tạo và kỹ năng sống.
-          </p>
-          <ul class="mt-6 space-y-3">
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-green-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Phát triển tư duy triết học từ nhỏ
-            </li>
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-green-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Học qua trải nghiệm và thực hành
-            </li>
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-green-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Giáo viên giàu kinh nghiệm, tận tâm
-            </li>
-          </ul>
-          <button
-            class="btn btn-primary mt-8"
-            onclick="window.location.href='about.html'"
-          >
-            Tìm hiểu thêm
-          </button>
+<section class="mt-16 py-16">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+      <!-- Left Image -->
+      <div class="relative">
+        <div class="aspect-square overflow-hidden rounded-3xl bg-yellow-300">
+          <img
+            src="/images/home_banner2_bg.jpg"
+            alt="Khám phá khóa học"
+            class="h-full w-full object-cover"
+          />
         </div>
-      </div>
-    </div>
-
-    <div class="row items-center">
-      <div class="lg:col-6 lg:order-2">
-        <img
-          class="w-full rounded-2xl object-contain shadow-lg"
-          src="images/sells-by-country.png"
-          alt="Thống kê học viên"
-        />
-      </div>
-      <div class="mt-6 lg:col-6 lg:order-1 lg:mt-0">
-        <div class="text-container lg:pr-12">
-          <h2 class="text-3xl font-bold lg:text-4xl">
-            Theo Dõi Tiến Trình Học Tập
-          </h2>
-          <p class="mt-4 text-lg text-gray-700">
-            Hệ thống quản lý học tập hiện đại giúp phụ huynh và học sinh dễ dàng
-            theo dõi tiến độ, kết quả học tập mọi lúc, mọi nơi.
-          </p>
-          <ul class="mt-6 space-y-3">
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Báo cáo tiến trình chi tiết
-            </li>
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Chấm điểm tự động bài tập trắc nghiệm
-            </li>
-            <li class="flex items-center text-gray-800">
-              <svg
-                class="mr-3 h-6 w-6 text-blue-500"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Giao tiếp trực tiếp với giáo viên
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ./end Giới thiệu -->
-
-<!-- Reviews -->
-<section class="reviews bg-white py-16">
-  <div class="container">
-    <div class="row mb-12 justify-center text-center">
-      <div class="lg:col-8">
-        <h2 class="text-4xl font-bold">Phụ Huynh Nói Gì Về Chúng Tôi</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          Những phản hồi chân thật từ phụ huynh và học sinh đã tham gia khóa học
-        </p>
-      </div>
-    </div>
-    <div class="row mt-10">
-      <div class="col-12">
-        <div class="swiper reviews-carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
-                  <img src="images/users/user-5.png" alt="" />
-                </div>
-                <h4 class="mb-2">Chị Nguyễn Thu Hà</h4>
-                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 3</p>
-                <p>
-                  "Con tôi đã thay đổi rất nhiều sau khi tham gia khóa Triết gia
-                  Tập sự. Con tự tin hơn, biết suy nghĩ và đặt câu hỏi về mọi
-                  thứ xung quanh."
-                </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
-                  <img src="images/users/user-2.png" alt="" />
-                </div>
-                <h4 class="mb-2">Anh Trần Văn Minh</h4>
-                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 5</p>
-                <p>
-                  "Phương pháp giảng dạy rất phù hợp với trẻ em. Video bài giảng
-                  sinh động, bài tập thú vị. Con tôi rất thích học và luôn mong
-                  chờ buổi học mới."
-                </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review">
-                <div class="review-author-avatar bg-gradient">
-                  <img src="images/users/user-6.png" alt="" />
-                </div>
-                <h4 class="mb-2">Chị Phạm Thị Lan</h4>
-                <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 4</p>
-                <p>
-                  "Giáo viên nhiệt tình, tận tâm. Hệ thống theo dõi tiến trình
-                  học tập giúp tôi nắm rõ được sự tiến bộ của con. Rất hài lòng
-                  với chương trình!"
-                </p>
-                <div
-                  class="review-rating mt-6 flex items-center justify-center space-x-2.5"
-                >
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                  <img src="images/icons/star.svg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div
-            class="swiper-pagination reviews-carousel-pagination !bottom-0"
-          ></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Reviews -->
-
-<!-- Call To action -->
-<section
-  class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 px-5 py-20 xl:py-[120px]"
->
-  <div class="container">
-    <div class="row justify-center text-center text-white">
-      <div class="lg:col-10">
-        <h2 class="mb-6 text-4xl font-bold lg:text-5xl">
-          Sẵn Sàng Bắt Đầu Hành Trình Học Tập?
-        </h2>
-        <p class="mb-8 text-xl text-white/90">
-          Đăng ký ngay hôm nay để nhận ưu đãi đặc biệt dành cho học viên mới.
-          Cùng con khám phá thế giới tri thức đầy màu sắc!
-        </p>
-        <div class="flex flex-col justify-center gap-4 sm:flex-row">
-          <a class="btn btn-white px-8 py-4 text-lg" href="signup.html">
-            Đăng ký học ngay
-          </a>
-          <a
-            class="btn btn-outline-white border-2 border-white bg-white/10 px-8 py-4 text-lg text-white hover:bg-white/20"
-            href="tu-van.html"
-          >
-            Đăng ký tư vấn miễn phí
-          </a>
-        </div>
-        <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div class="text-center">
-            <div class="mb-2 text-4xl font-bold">500+</div>
-            <div class="text-white/80">Học viên đã tham gia</div>
-          </div>
-          <div class="text-center">
-            <div class="mb-2 text-4xl font-bold">98%</div>
-            <div class="text-white/80">Phụ huynh hài lòng</div>
-          </div>
-          <div class="text-center">
-            <div class="mb-2 text-4xl font-bold">15+</div>
-            <div class="text-white/80">Năm kinh nghiệm</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Modal Popup cho Video và Bài tập -->
-<div
-  id="competencyModal"
-  class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
->
-  <div
-    class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white shadow-2xl"
-  >
-    <!-- Nút đóng -->
-    <button
-      onclick="closeModal()"
-      class="absolute right-4 top-4 z-10 rounded-full bg-red-500 p-2 text-white transition-all hover:bg-red-600"
-    >
-      <svg
-        class="h-6 w-6"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-    </button>
-
-    <!-- Header Modal -->
-    <div
-      id="modalHeader"
-      class="rounded-t-2xl bg-gradient-to-r from-green-500 to-green-600 p-6"
-    >
-      <h3 id="modalTitle" class="text-2xl font-bold text-white">Năng lực</h3>
-      <p id="modalSubtitle" class="mt-1 text-white/90">
-        Triết gia Tập sự | 2 chủ đề
-      </p>
-    </div>
-
-    <!-- Nội dung Modal -->
-    <div class="p-6">
-      <!-- Chủ đề 1 -->
-      <div class="mb-6">
-        <h4 id="topic1Title" class="mb-3 text-xl font-bold text-gray-800">
-          📖 Chủ đề 1: Tên chủ đề
-        </h4>
-
-        <!-- Video embed -->
-        <div class="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100">
-          <iframe
-            id="video1"
-            class="h-full w-full"
-            src=""
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <!-- Bài tập trắc nghiệm -->
-        <div class="rounded-lg border-2 border-blue-200 bg-blue-50 p-4">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <svg
-                class="mr-2 h-6 w-6 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              <span id="quiz1Count" class="font-semibold text-gray-800"
-                >5 câu hỏi trắc nghiệm</span
-              >
-            </div>
-            <button
-              class="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
-            >
-              Làm bài →
-            </button>
-          </div>
-        </div>
+        <div
+          class="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-yellow-100 opacity-50"
+        ></div>
       </div>
 
-      <!-- Divider -->
-      <div class="my-6 border-t-2 border-gray-200"></div>
-
-      <!-- Chủ đề 2 -->
+      <!-- Right Content -->
       <div>
-        <h4 id="topic2Title" class="mb-3 text-xl font-bold text-gray-800">
-          📖 Chủ đề 2: Tên chủ đề
-        </h4>
+        <h2 class="mb-2 text-3xl font-bold text-purple-900 md:text-4xl">
+          Khám phá khóa học phát triển
+        </h2>
+        <div class="mb-6 h-1 w-16 bg-yellow-400"></div>
 
-        <!-- Video embed -->
-        <div class="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100">
-          <iframe
-            id="video2"
-            class="h-full w-full"
-            src=""
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <p class="mb-8 leading-relaxed text-gray-700">
+          Từ hào là thương hiệu đầu tiên thuộc hệ sinh thái các thương hiệu giáo
+          dục, HG Education quyết tâm công hiến cho xã hội với sứ mệnh là
+          "Choose the best Education – Giúp học viên lựa chọn dịch vụ giáo dục
+          phù hợp nhất".
+        </p>
 
-        <!-- Bài tập trắc nghiệm -->
-        <div class="rounded-lg border-2 border-blue-200 bg-blue-50 p-4">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center">
-              <svg
-                class="mr-2 h-6 w-6 text-blue-600"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              <span id="quiz2Count" class="font-semibold text-gray-800"
-                >5 câu hỏi trắc nghiệm</span
-              >
-            </div>
-            <button
-              class="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
+        <!-- Checklist -->
+        <ul class="mb-8 space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-xl text-yellow-400">●</span>
+            <span class="text-gray-700">Có số vật chất hiện đại</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-xl text-yellow-400">●</span>
+            <span class="text-gray-700"
+              >Giáo trình đa dạng trong nước và quốc tế</span
             >
-              Làm bài →
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-xl text-yellow-400">●</span>
+            <span class="text-gray-700">Đội ngũ giáo viên xuất sắc</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-xl text-yellow-400">●</span>
+            <span class="text-gray-700"
+              >Nhiều chương trình hoạt động ngoài khóa</span
+            >
+          </li>
+        </ul>
 
-    <!-- Footer Modal -->
-    <div class="rounded-b-2xl border-t-2 border-gray-200 bg-gray-50 p-6">
-      <div class="flex items-center justify-between">
-        <div class="text-sm text-gray-600">
-          <span class="font-semibold">Tổng:</span> 2 video bài giảng + 10 câu
-          hỏi trắc nghiệm
-        </div>
         <button
-          onclick="closeModal()"
-          class="rounded-lg bg-gray-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-gray-600"
+          class="rounded-full bg-cyan-500 px-8 py-3 font-semibold text-white transition-colors duration-300 hover:bg-cyan-600"
         >
-          Đóng
+          Xem thêm
         </button>
       </div>
     </div>
   </div>
-</div>
-<!-- ./end Modal -->
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Reviews -->
+  <section class="reviews bg-white py-16">
+    <div class="container">
+      <div class="row mb-12 justify-center text-center">
+        <div class="lg:col-8">
+          <h2 class="text-4xl font-bold">Phụ Huynh Nói Gì Về Chúng Tôi</h2>
+          <p class="mt-4 text-lg text-gray-600">
+            Những phản hồi chân thật từ phụ huynh và học sinh đã tham gia khóa
+            học
+          </p>
+        </div>
+      </div>
+      <div class="row mt-10">
+        <div class="col-12">
+          <div class="swiper reviews-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-author-avatar bg-gradient">
+                    <img src="images/users/user-5.png" alt="" />
+                  </div>
+                  <h4 class="mb-2">Chị Nguyễn Thu Hà</h4>
+                  <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 3</p>
+                  <p>
+                    "Con tôi đã thay đổi rất nhiều sau khi tham gia khóa Triết
+                    gia Tập sự. Con tự tin hơn, biết suy nghĩ và đặt câu hỏi về
+                    mọi thứ xung quanh."
+                  </p>
+                  <div
+                    class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                  >
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-author-avatar bg-gradient">
+                    <img src="images/users/user-2.png" alt="" />
+                  </div>
+                  <h4 class="mb-2">Anh Trần Văn Minh</h4>
+                  <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 5</p>
+                  <p>
+                    "Phương pháp giảng dạy rất phù hợp với trẻ em. Video bài
+                    giảng sinh động, bài tập thú vị. Con tôi rất thích học và
+                    luôn mong chờ buổi học mới."
+                  </p>
+                  <div
+                    class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                  >
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review">
+                  <div class="review-author-avatar bg-gradient">
+                    <img src="images/users/user-6.png" alt="" />
+                  </div>
+                  <h4 class="mb-2">Chị Phạm Thị Lan</h4>
+                  <p class="mb-4 text-[#666]">Phụ huynh học sinh lớp 4</p>
+                  <p>
+                    "Giáo viên nhiệt tình, tận tâm. Hệ thống theo dõi tiến trình
+                    học tập giúp tôi nắm rõ được sự tiến bộ của con. Rất hài
+                    lòng với chương trình!"
+                  </p>
+                  <div
+                    class="review-rating mt-6 flex items-center justify-center space-x-2.5"
+                  >
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                    <img src="images/icons/star.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div
+              class="swiper-pagination reviews-carousel-pagination !bottom-0"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Reviews -->
 
-<style>
-  .banner-swiper {
-    height: 300px; /* Chiều cao mặc định */
-  }
+  <!-- Hero Section with Kids -->
+  <section class="mt-16 bg-cyan-400 py-20">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="mb-6 text-center text-3xl font-bold text-white md:text-4xl">
+        Hãy để con em của bạn được học tập và rèn luyện trong môi trường giáo
+        dục hàng đầu Việt Nam của HG Education
+      </h2>
 
-  .swiper-slide img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+      <div class="mb-12 flex justify-center">
+        <button
+          class="rounded-full bg-yellow-400 px-8 py-2 font-bold text-gray-800 transition-colors duration-300 hover:bg-yellow-500"
+        >
+          ĐĂNG KÝ NGAY
+        </button>
+      </div>
 
-  @media (min-width: 768px) {
+      <!-- Decorative Icons -->
+      <div
+        class="relative flex h-32 flex-wrap items-end justify-center gap-4 md:gap-8"
+      >
+        <div class="text-4xl">🎈</div>
+        <div class="text-3xl">📚</div>
+        <div class="text-4xl">💡</div>
+        <div class="text-3xl">▶️</div>
+        <div class="text-4xl">🚀</div>
+        <div class="text-3xl">⭐</div>
+        <div class="text-4xl">🧪</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Popup cho Video và Bài tập -->
+  <div
+    id="competencyModal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+  >
+    <div
+      class="relative max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white shadow-2xl"
+    >
+      <!-- Nút đóng -->
+      <button
+        onclick="closeModal()"
+        class="absolute right-4 top-4 z-10 rounded-full bg-red-500 p-2 text-white transition-all hover:bg-red-600"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+
+      <!-- Header Modal -->
+      <div
+        id="modalHeader"
+        class="rounded-t-2xl bg-gradient-to-r from-green-500 to-green-600 p-6"
+      >
+        <h3 id="modalTitle" class="text-2xl font-bold text-white">Năng lực</h3>
+        <p id="modalSubtitle" class="mt-1 text-white/90">
+          Triết gia Tập sự | 2 chủ đề
+        </p>
+      </div>
+
+      <!-- Nội dung Modal -->
+      <div class="p-6">
+        <!-- Chủ đề 1 -->
+        <div class="mb-6">
+          <h4 id="topic1Title" class="mb-3 text-xl font-bold text-gray-800">
+            📖 Chủ đề 1: Tên chủ đề
+          </h4>
+
+          <!-- Video embed -->
+          <div class="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100">
+            <iframe
+              id="video1"
+              class="h-full w-full"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Bài tập trắc nghiệm -->
+          <div class="rounded-lg border-2 border-blue-200 bg-blue-50 p-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <svg
+                  class="mr-2 h-6 w-6 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                <span id="quiz1Count" class="font-semibold text-gray-800"
+                  >5 câu hỏi trắc nghiệm</span
+                >
+              </div>
+              <button
+                class="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
+              >
+                Làm bài →
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="my-6 border-t-2 border-gray-200"></div>
+
+        <!-- Chủ đề 2 -->
+        <div>
+          <h4 id="topic2Title" class="mb-3 text-xl font-bold text-gray-800">
+            📖 Chủ đề 2: Tên chủ đề
+          </h4>
+
+          <!-- Video embed -->
+          <div class="mb-4 aspect-video overflow-hidden rounded-lg bg-gray-100">
+            <iframe
+              id="video2"
+              class="h-full w-full"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Bài tập trắc nghiệm -->
+          <div class="rounded-lg border-2 border-blue-200 bg-blue-50 p-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <svg
+                  class="mr-2 h-6 w-6 text-blue-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+                <span id="quiz2Count" class="font-semibold text-gray-800"
+                  >5 câu hỏi trắc nghiệm</span
+                >
+              </div>
+              <button
+                class="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
+              >
+                Làm bài →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Modal -->
+      <div class="rounded-b-2xl border-t-2 border-gray-200 bg-gray-50 p-6">
+        <div class="flex items-center justify-between">
+          <div class="text-sm text-gray-600">
+            <span class="font-semibold">Tổng:</span> 2 video bài giảng + 10 câu
+            hỏi trắc nghiệm
+          </div>
+          <button
+            onclick="closeModal()"
+            class="rounded-lg bg-gray-500 px-6 py-2 font-semibold text-white transition-colors hover:bg-gray-600"
+          >
+            Đóng
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./end Modal -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <style>
     .banner-swiper {
-      height: 600px; /* Chiều cao cho màn hình tablet */
+      height: 300px; /* Chiều cao mặc định */
     }
-  }
 
-  @media (min-width: 1024px) {
-    .banner-swiper {
-      height: 700px; /* Chiều cao cho màn hình desktop */
+    .swiper-slide img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
-  }
-</style>
+
+    @media (min-width: 768px) {
+      .banner-swiper {
+        height: 600px; /* Chiều cao cho màn hình tablet */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .banner-swiper {
+        height: 700px; /* Chiều cao cho màn hình desktop */
+      }
+    }
+  </style>
+</section>
